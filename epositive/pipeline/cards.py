@@ -99,8 +99,8 @@ def render(post, outdir):
                 if not has_art:
                     center = "bottom:120px;display:flex;flex-direction:column;justify-content:center;align-items:center"
             else:
-                art_html = f"<div class='art' style='top:150px'>{ART[s['art']]}</div>" if has_art else ""
-                artw, ttop = 640, (700 if has_art else 360)
+                art_html = f"<div class='art' style='top:130px'>{ART[s['art']]}</div>" if has_art else ""
+                artw, ttop = 600, (640 if has_art else 360)
             if kind == "cta":
                 foot = "<div class='foot'>ඔබේ යාළුවෙක්ට <b>share</b> කරන්න · E Positive follow කරන්න</div>"
             elif n > 1 and i < n:
