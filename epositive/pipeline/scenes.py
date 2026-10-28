@@ -54,6 +54,39 @@ ART = {
   <text x='300' y='330' font-family='Poppins' font-weight='800' font-size='170' fill='{DEEP}' text-anchor='middle' letter-spacing='-6'>E<tspan fill='#fff'>+</tspan></text>
   <text x='300' y='400' font-family='Poppins' font-weight='700' font-size='34' fill='{DEEP}' text-anchor='middle' letter-spacing='7'>POSITIVE</text>
  </svg>""",
+ "rain_cloud": f"""<svg viewBox='0 0 600 520' width='760'>
+  <g fill='#5B7C85'><circle cx='210' cy='200' r='85'/><circle cx='310' cy='160' r='110'/><circle cx='410' cy='210' r='80'/><rect x='130' y='200' width='360' height='90' rx='45'/></g>
+  <g stroke='#5EC4E8' stroke-width='10' stroke-linecap='round'><line x1='180' y1='330' x2='160' y2='385'/><line x1='250' y1='330' x2='230' y2='385'/><line x1='320' y1='330' x2='300' y2='385'/><line x1='390' y1='330' x2='370' y2='385'/><line x1='215' y1='410' x2='195' y2='465'/><line x1='285' y1='410' x2='265' y2='465'/><line x1='355' y1='410' x2='335' y2='465'/><line x1='425' y1='410' x2='405' y2='465'/></g>
+  <text x='300' y='215' font-family='Poppins' font-weight='800' font-size='90' fill='{CREAM}' text-anchor='middle'>?</text>
+ </svg>""",
+ "paddy": f"""<svg viewBox='0 0 600 520' width='760'>
+  <g fill='#E8F1F5' opacity='.95'><circle cx='200' cy='110' r='55'/><circle cx='270' cy='90' r='70'/><circle cx='340' cy='115' r='50'/><rect x='150' y='110' width='240' height='50' rx='25'/></g>
+  <g stroke='#5EC4E8' stroke-width='7' stroke-linecap='round'><line x1='190' y1='185' x2='180' y2='215'/><line x1='250' y1='185' x2='240' y2='215'/><line x1='310' y1='185' x2='300' y2='215'/><line x1='370' y1='185' x2='360' y2='215'/></g>
+  <rect x='40' y='400' width='520' height='90' rx='14' fill='#3E8E9A' opacity='.6'/>
+  <g stroke='#7EDB98' stroke-width='7' stroke-linecap='round' fill='none'>
+   <path d='M90 420 q-10 -70 -30 -110'/><path d='M90 420 q10 -80 30 -120'/><path d='M170 420 q-10 -70 -30 -110'/><path d='M170 420 q10 -80 30 -120'/>
+   <path d='M250 420 q-10 -70 -30 -110'/><path d='M250 420 q10 -80 30 -120'/><path d='M330 420 q-10 -70 -30 -110'/><path d='M330 420 q10 -80 30 -120'/>
+   <path d='M410 420 q-10 -70 -30 -110'/><path d='M410 420 q10 -80 30 -120'/><path d='M490 420 q-10 -70 -30 -110'/><path d='M490 420 q10 -80 30 -120'/></g>
+  <g fill='{SUN}'><circle cx='120' cy='300' r='9'/><circle cx='280' cy='300' r='9'/><circle cx='440' cy='300' r='9'/><circle cx='200' cy='305' r='8'/><circle cx='360' cy='305' r='8'/><circle cx='520' cy='305' r='8'/></g>
+ </svg>""",
+ "glasses": f"""<svg viewBox='0 0 600 520' width='760'>
+  <circle cx='300' cy='260' r='230' fill='{SUN}' opacity='.14'/>
+  <circle cx='190' cy='270' r='105' fill='#5B7C85'/><circle cx='410' cy='270' r='105' fill='{SUN}'/>
+  <g stroke='#5EC4E8' stroke-width='8' stroke-linecap='round'><line x1='160' y1='230' x2='150' y2='255'/><line x1='200' y1='250' x2='190' y2='275'/><line x1='175' y1='295' x2='165' y2='320'/><line x1='225' y1='300' x2='215' y2='325'/></g>
+  <circle cx='410' cy='270' r='40' fill='#FFF3C4'/>
+  <g stroke='{CREAM}' stroke-width='16' fill='none'><circle cx='190' cy='270' r='105'/><circle cx='410' cy='270' r='105'/><path d='M295 260 q15 -22 30 0'/><line x1='85' y1='250' x2='40' y2='225'/><line x1='515' y1='250' x2='560' y2='225'/></g>
+ </svg>""",
+ "bulb": f"""<svg viewBox='0 0 600 520' width='760'>
+  <circle cx='300' cy='220' r='210' fill='{SUN}' opacity='.16'/>
+  <g stroke='{SUN}' stroke-width='12' stroke-linecap='round'><line x1='300' y1='20' x2='300' y2='60'/><line x1='140' y1='90' x2='168' y2='118'/><line x1='460' y1='90' x2='432' y2='118'/><line x1='90' y1='240' x2='130' y2='240'/><line x1='510' y1='240' x2='470' y2='240'/></g>
+  <path d='M300 100 C210 100 170 170 180 230 C190 290 240 310 245 360 h110 C360 310 410 290 420 230 C430 170 390 100 300 100z' fill='#FFC857'/>
+  <rect x='245' y='370' width='110' height='26' rx='8' fill='{CREAM}'/><rect x='255' y='402' width='90' height='26' rx='8' fill='{CREAM}'/><rect x='275' y='434' width='50' height='20' rx='8' fill='{CREAM}'/>
+  <text x='300' y='280' font-family='Poppins' font-weight='800' font-size='120' fill='{DEEP}' text-anchor='middle'>?</text>
+ </svg>""",
+ "rain_sun": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='390' cy='170' r='90' fill='{SUN}'/>
+  <g fill='#E8F1F5'><circle cx='230' cy='220' r='70'/><circle cx='310' cy='200' r='85'/><circle cx='390' cy='240' r='60'/><rect x='170' y='220' width='280' height='70' rx='35'/></g>
+  <g stroke='#5EC4E8' stroke-width='9' stroke-linecap='round'><line x1='210' y1='320' x2='195' y2='360'/><line x1='270' y1='320' x2='255' y2='360'/><line x1='330' y1='320' x2='315' y2='360'/><line x1='390' y1='320' x2='375' y2='360'/></g>
+  <path d='M120 470 a180 180 0 0 1 360 0' fill='none' stroke='#E76F51' stroke-width='14'/><path d='M140 470 a160 160 0 0 1 320 0' fill='none' stroke='{SUN}' stroke-width='14'/><path d='M160 470 a140 140 0 0 1 280 0' fill='none' stroke='#3FAE6B' stroke-width='14'/></svg>""",
 }
 
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>
@@ -76,6 +109,8 @@ def main(script, outdir):
         for i, sc in enumerate(data["scenes"], 1):
             cap = sc["caption"]
             fs = 78 if len(cap) < 60 else 66
+            if i == 1 and len(cap) < 40:
+                fs = 104  # scene-1 hook: big enough to read in under 2 s
             html = PAGE.format(teal=TEAL, deep=DEEP, sun=SUN, cream=CREAM, art=ART[sc["art"]], cap=cap, kick=sc.get("kicker", ""), fs=fs)
             pg.set_content(html)
             pg.wait_for_timeout(300)
