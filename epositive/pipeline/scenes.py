@@ -87,6 +87,18 @@ ART = {
   <g fill='#E8F1F5'><circle cx='230' cy='220' r='70'/><circle cx='310' cy='200' r='85'/><circle cx='390' cy='240' r='60'/><rect x='170' y='220' width='280' height='70' rx='35'/></g>
   <g stroke='#5EC4E8' stroke-width='9' stroke-linecap='round'><line x1='210' y1='320' x2='195' y2='360'/><line x1='270' y1='320' x2='255' y2='360'/><line x1='330' y1='320' x2='315' y2='360'/><line x1='390' y1='320' x2='375' y2='360'/></g>
   <path d='M120 470 a180 180 0 0 1 360 0' fill='none' stroke='#E76F51' stroke-width='14'/><path d='M140 470 a160 160 0 0 1 320 0' fill='none' stroke='{SUN}' stroke-width='14'/><path d='M160 470 a140 140 0 0 1 280 0' fill='none' stroke='#3FAE6B' stroke-width='14'/></svg>""",
+ "frog": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='270' r='220' fill='{SUN}' opacity='.15'/>
+  <ellipse cx='300' cy='330' rx='190' ry='130' fill='#3FAE6B'/><ellipse cx='300' cy='370' rx='120' ry='70' fill='#9BE0B0'/>
+  <circle cx='215' cy='200' r='62' fill='#3FAE6B'/><circle cx='385' cy='200' r='62' fill='#3FAE6B'/>
+  <circle cx='215' cy='195' r='38' fill='#fff'/><circle cx='385' cy='195' r='38' fill='#fff'/><circle cx='222' cy='200' r='18' fill='#1B2445'/><circle cx='378' cy='200' r='18' fill='#1B2445'/>
+  <path d='M230 300 q70 50 140 0' stroke='#1B5E3A' stroke-width='12' fill='none' stroke-linecap='round'/>
+  <circle cx='190' cy='300' r='14' fill='#F7A8B8'/><circle cx='410' cy='300' r='14' fill='#F7A8B8'/>
+  <ellipse cx='150' cy='450' rx='70' ry='24' fill='#2E8A55'/><ellipse cx='450' cy='450' rx='70' ry='24' fill='#2E8A55'/></svg>""",
+ "trophy": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='250' r='220' fill='{SUN}' opacity='.15'/>
+  <path d='M200 90 h200 v90 a100 100 0 0 1 -200 0z' fill='{SUN}'/><path d='M200 110 h-55 a50 50 0 0 0 55 80' fill='none' stroke='{SUN}' stroke-width='16'/><path d='M400 110 h55 a50 50 0 0 1 -55 80' fill='none' stroke='{SUN}' stroke-width='16'/>
+  <rect x='280' y='275' width='40' height='70' fill='#C98A1A'/><rect x='220' y='345' width='160' height='34' rx='8' fill='#C98A1A'/>
+  <g fill='{CREAM}'><rect x='120' y='440' width='60' height='40' rx='6'/><rect x='200' y='415' width='60' height='65' rx='6'/><rect x='280' y='390' width='60' height='90' rx='6' opacity='0'/><rect x='360' y='415' width='60' height='65' rx='6'/><rect x='440' y='440' width='60' height='40' rx='6'/></g>
+  <path d='M300 125 l10 25 l27 2 l-21 17 l7 26 l-23 -14 l-23 14 l7 -26 l-21 -17 l27 -2z' fill='#fff'/></svg>""",
 }
 
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>
