@@ -99,6 +99,18 @@ ART = {
   <rect x='280' y='275' width='40' height='70' fill='#C98A1A'/><rect x='220' y='345' width='160' height='34' rx='8' fill='#C98A1A'/>
   <g fill='{CREAM}'><rect x='120' y='440' width='60' height='40' rx='6'/><rect x='200' y='415' width='60' height='65' rx='6'/><rect x='280' y='390' width='60' height='90' rx='6' opacity='0'/><rect x='360' y='415' width='60' height='65' rx='6'/><rect x='440' y='440' width='60' height='40' rx='6'/></g>
   <path d='M300 125 l10 25 l27 2 l-21 17 l7 26 l-23 -14 l-23 14 l7 -26 l-21 -17 l27 -2z' fill='#fff'/></svg>""",
+ "hourglass": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='260' r='220' fill='{SUN}' opacity='.15'/>
+  <rect x='180' y='50' width='240' height='30' rx='12' fill='{CREAM}'/><rect x='180' y='440' width='240' height='30' rx='12' fill='{CREAM}'/>
+  <path d='M205 80 h190 C395 170 330 220 310 260 C330 300 395 350 395 440 h-190 C205 350 270 300 290 260 C270 220 205 170 205 80z' fill='none' stroke='{CREAM}' stroke-width='12'/>
+  <path d='M240 120 h120 C350 170 315 205 300 235 C285 205 250 170 240 120z' fill='{SUN}'/>
+  <path d='M230 425 C240 375 275 350 300 340 C325 350 360 375 370 425z' fill='{SUN}'/><line x1='300' y1='240' x2='300' y2='340' stroke='{SUN}' stroke-width='6' stroke-dasharray='10 8'/>
+  <circle cx='480' cy='130' r='58' fill='{SUN}'/><text x='480' y='150' font-family='Poppins' font-weight='800' font-size='56' fill='{DEEP}' text-anchor='middle'>20</text></svg>""",
+ "phone_off": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='250' r='220' fill='{SUN}' opacity='.15'/><rect x='210' y='60' width='180' height='340' rx='30' fill='#2B2D42'/><rect x='225' y='90' width='150' height='270' rx='10' fill='#4A4E69'/>
+  <circle cx='300' cy='225' r='60' fill='none' stroke='#E76F51' stroke-width='14'/><line x1='258' y1='267' x2='342' y2='183' stroke='#E76F51' stroke-width='14' stroke-linecap='round'/>
+  <circle cx='460' cy='120' r='45' fill='{SUN}'/><path d='M80 470 q60 -80 120 0' fill='#3FAE6B'/><path d='M400 470 q60 -90 130 0' fill='#57C77F'/></svg>""",
+ "heart": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='260' r='230' fill='{SUN}' opacity='.15'/>
+  <path d='M300 430 C120 320 110 190 190 150 C240 125 285 155 300 190 C315 155 360 125 410 150 C490 190 480 320 300 430z' fill='#E76F51'/>
+  <path d='M230 200 q20 -25 45 -10' stroke='#fff' stroke-width='10' fill='none' stroke-linecap='round' opacity='.7'/></svg>""",
 }
 
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>
