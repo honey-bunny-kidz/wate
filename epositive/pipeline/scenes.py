@@ -111,6 +111,17 @@ ART = {
  "heart": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='260' r='230' fill='{SUN}' opacity='.15'/>
   <path d='M300 430 C120 320 110 190 190 150 C240 125 285 155 300 190 C315 155 360 125 410 150 C490 190 480 320 300 430z' fill='#E76F51'/>
   <path d='M230 200 q20 -25 45 -10' stroke='#fff' stroke-width='10' fill='none' stroke-linecap='round' opacity='.7'/></svg>""",
+ "tea": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='260' r='220' fill='{SUN}' opacity='.15'/>
+  <g fill='none' stroke='{CREAM}' stroke-width='10' stroke-linecap='round' opacity='.8'><path d='M240 170 q-20 -35 0 -70 q20 -35 0 -70'/><path d='M300 170 q-20 -35 0 -70 q20 -35 0 -70'/><path d='M360 170 q-20 -35 0 -70 q20 -35 0 -70'/></g>
+  <path d='M170 200 h260 v120 a100 100 0 0 1 -100 100 h-60 a100 100 0 0 1 -100 -100z' fill='{CREAM}'/>
+  <path d='M430 230 h30 a50 50 0 0 1 0 100 h-40' fill='none' stroke='{CREAM}' stroke-width='22'/>
+  <path d='M300 360 C250 330 248 290 272 280 C287 274 297 284 300 292 C303 284 313 274 328 280 C352 290 350 330 300 360z' fill='#E76F51'/>
+  <ellipse cx='300' cy='450' rx='200' ry='22' fill='{CREAM}' opacity='.6'/></svg>""",
+ "five": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='260' r='220' fill='{SUN}' opacity='.15'/>
+  <circle cx='300' cy='260' r='150' fill='{SUN}'/><text x='300' y='330' font-family='Poppins' font-weight='800' font-size='210' fill='{DEEP}' text-anchor='middle'>5</text>
+  <g fill='#E76F51'><path d='M110 120 C80 100 80 78 94 72 C102 69 108 74 110 79 C112 74 118 69 126 72 C140 78 140 100 110 120z'/><path d='M490 110 C460 90 460 68 474 62 C482 59 488 64 490 69 C492 64 498 59 506 62 C520 68 520 90 490 110z'/>
+  <path d='M95 420 C65 400 65 378 79 372 C87 369 93 374 95 379 C97 374 103 369 111 372 C125 378 125 400 95 420z'/><path d='M505 430 C475 410 475 388 489 382 C497 379 503 384 505 389 C507 384 513 379 521 382 C535 388 535 410 505 430z'/>
+  <path d='M300 500 C270 480 270 458 284 452 C292 449 298 454 300 459 C302 454 308 449 316 452 C330 458 330 480 300 500z'/></g></svg>""",
 }
 
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>
