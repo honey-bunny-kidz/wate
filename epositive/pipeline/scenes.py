@@ -122,6 +122,14 @@ ART = {
   <g fill='#E76F51'><path d='M110 120 C80 100 80 78 94 72 C102 69 108 74 110 79 C112 74 118 69 126 72 C140 78 140 100 110 120z'/><path d='M490 110 C460 90 460 68 474 62 C482 59 488 64 490 69 C492 64 498 59 506 62 C520 68 520 90 490 110z'/>
   <path d='M95 420 C65 400 65 378 79 372 C87 369 93 374 95 379 C97 374 103 369 111 372 C125 378 125 400 95 420z'/><path d='M505 430 C475 410 475 388 489 382 C497 379 503 384 505 389 C507 384 513 379 521 382 C535 388 535 410 505 430z'/>
   <path d='M300 500 C270 480 270 458 284 452 C292 449 298 454 300 459 C302 454 308 449 316 452 C330 458 330 480 300 500z'/></g></svg>""",
+ "rocks_jar": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='260' r='220' fill='{SUN}' opacity='.15'/>
+  <rect x='195' y='55' width='210' height='34' rx='10' fill='#A85A2E'/>
+  <path d='M180 95 h240 v300 a50 50 0 0 1 -50 50 h-140 a50 50 0 0 1 -50 -50z' fill='{CREAM}' opacity='.18' stroke='{CREAM}' stroke-width='10'/>
+  <path d='M188 360 q112 -30 224 0 v35 a42 42 0 0 1 -42 42 h-140 a42 42 0 0 1 -42 -42z' fill='#E9C46A'/>
+  <g stroke='#4A4E69' stroke-width='4'><ellipse cx='245' cy='330' rx='48' ry='38' fill='#8D99AE'/><ellipse cx='350' cy='325' rx='52' ry='40' fill='#A3AAB8'/>
+  <ellipse cx='295' cy='255' rx='55' ry='42' fill='#8D99AE'/><ellipse cx='240' cy='180' rx='40' ry='32' fill='#A3AAB8'/><ellipse cx='355' cy='190' rx='45' ry='35' fill='#8D99AE'/></g>
+  <g fill='#E9C46A'><circle cx='300' cy='175' r='6'/><circle cx='205' cy='255' r='5'/><circle cx='395' cy='260' r='6'/><circle cx='300' cy='320' r='5'/><circle cx='215' cy='395' r='4'/></g>
+</svg>""",
 }
 
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>
