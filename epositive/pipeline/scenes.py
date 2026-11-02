@@ -1,6 +1,8 @@
-"""Render E Positive reel scenes (1080x1920 PNG) from a JSON script with Playwright/Chromium.
+"""Render E Positive reel scenes (1080x1920 PNG, 9:16) from a JSON script with Playwright/Chromium.
 Usage: python3 scenes.py script.json outdir
-Script JSON: {"scenes":[{"art":"<svg-name>","caption":"...","kicker":"..."}]}
+Script JSON: {"voice":"line 1 ... line 2 ...", "scenes":[{"art":"<svg-name>","caption":"...","kicker":"..."}]}
+Mobile safe zones: nothing below y=1536 (bottom 20%: Reels/Shorts buttons and caption) and nothing in the
+right 15% beside the text block (like/share buttons). Closed captions are added later by build.py at y~1290-1500.
 """
 import json, sys, os
 from playwright.sync_api import sync_playwright
@@ -156,12 +158,13 @@ ART = {
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>
 body{{margin:0;width:1080px;height:1920px;overflow:hidden;font-family:'Noto Sans Sinhala',sans-serif;
 background:radial-gradient(120% 70% at 50% 18%, #17707A 0%, {teal} 45%, {deep} 100%);}}
-.top{{position:absolute;top:110px;left:0;right:0;text-align:center;font-family:Poppins;font-weight:700;letter-spacing:6px;color:{sun};font-size:34px}}
-.art{{position:absolute;top:300px;left:0;right:0;display:flex;justify-content:center}}
-.cap{{position:absolute;left:80px;right:80px;top:1180px;text-align:center;color:#fff;font-weight:800;font-size:{fs}px;line-height:1.45;text-shadow:0 4px 18px rgba(0,0,0,.35)}}
+.top{{position:absolute;top:96px;left:0;right:0;text-align:center;font-family:Poppins;font-weight:700;letter-spacing:6px;color:{sun};font-size:34px}}
+.kick{{position:absolute;top:150px;left:110px;right:170px;text-align:center;color:{cream};opacity:.85;font-size:32px;font-weight:600}}
+.art{{position:absolute;top:240px;left:0;right:56px;display:flex;justify-content:center}}
+.art svg{{width:640px;height:auto;max-height:600px}}
+.cap{{position:absolute;left:110px;right:170px;top:880px;text-align:center;color:#fff;font-weight:800;font-size:{fs}px;line-height:1.4;text-shadow:0 4px 18px rgba(0,0,0,.35)}}
 .cap b{{color:{sun}}}
-.kick{{position:absolute;bottom:170px;left:0;right:0;text-align:center;color:{cream};opacity:.85;font-size:36px;font-weight:600}}
-</style></head><body><div class='top'>E POSITIVE</div><div class='art'>{art}</div><div class='cap'>{cap}</div><div class='kick'>{kick}</div></body></html>"""
+</style></head><body><div class='top'>E POSITIVE</div><div class='kick'>{kick}</div><div class='art'>{art}</div><div class='cap'>{cap}</div></body></html>"""
 
 
 def main(script, outdir):
@@ -172,12 +175,15 @@ def main(script, outdir):
         pg = b.new_page(viewport={"width": 1080, "height": 1920})
         for i, sc in enumerate(data["scenes"], 1):
             cap = sc["caption"]
-            fs = 78 if len(cap) < 60 else 66
+            fs = 72 if len(cap) < 60 else 62
             if i == 1 and len(cap) < 40:
-                fs = 104  # scene-1 hook: big enough to read in under 2 s
+                fs = 96  # scene-1 hook: big enough to read in under 2 s
             html = PAGE.format(teal=TEAL, deep=DEEP, sun=SUN, cream=CREAM, art=ART[sc["art"]], cap=cap, kick=sc.get("kicker", ""), fs=fs)
             pg.set_content(html)
             pg.wait_for_timeout(300)
+            # keep the headline clear of the closed-caption band (y >= 1280): shrink until it fits
+            pg.evaluate("""() => { const c = document.querySelector('.cap'); let f = parseFloat(getComputedStyle(c).fontSize);
+              while (c.getBoundingClientRect().bottom > 1250 && f > 40) { f -= 3; c.style.fontSize = f + 'px'; } }""")
             pg.screenshot(path=f"{outdir}/s{i}.png")
         b.close()
 

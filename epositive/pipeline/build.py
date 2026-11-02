@@ -1,10 +1,14 @@
-"""Assemble an E Positive reel: scene PNGs + voice.wav + soft generated music -> 1080x1920 MP4.
-Usage: python3 build.py outdir "b1,b2,b3,b4,b5" out.mp4
+"""Assemble an E Positive reel: scene PNGs + voice.wav + soft generated music -> 1080x1920 (9:16) MP4,
+with closed captions burned in (synced to the voice) and a matching .srt file next to the MP4.
+Usage: python3 build.py outdir "b1,b2,b3,b4,b5" out.mp4 rYYYYMMDD.json
 bN = scene boundary times (s) in voice.wav; last scene runs to the end of the voice + 1.2 s.
+The script JSON's "voice" holds the spoken text, one part per scene separated by " ... ".
 """
-import sys, subprocess, wave, numpy as np
+import sys, os, re, json, subprocess, wave, numpy as np
+from PIL import Image, ImageDraw, ImageFont
 
 out, bounds, dst = sys.argv[1], [float(x) for x in sys.argv[2].split(",")], sys.argv[3]
+script = json.load(open(sys.argv[4])) if len(sys.argv) > 4 else None
 FPS, XF, TAIL = 30, 0.35, 1.2
 
 w = wave.open(f"{out}/voice.wav"); vdur = w.getnframes() / w.getframerate()
@@ -38,6 +42,88 @@ pad = (pad * fade * 0.11 * 32767).astype(np.int16)
 with wave.open(f"{out}/music.wav", "wb") as m:
     m.setnchannels(1); m.setsampwidth(2); m.setframerate(SR); m.writeframes(pad.tobytes())
 
+
+# ---------- closed captions (burned in + .srt) ----------
+FONT = os.path.expanduser("~/.fonts/NotoSansSinhala[wdth,wght].ttf")
+CC_W, CC_FS, CC_MAXCH = 760, 52, 46      # box text width (px), font size, chars per caption card
+
+
+def pauses(path):
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-i", path, "-af", "silencedetect=n=-35dB:d=0.18", "-f", "null", "-"],
+                       capture_output=True, text=True).stderr
+    st = [float(x) for x in re.findall(r"silence_start: ([\d.]+)", r)]
+    en = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", r)]
+    return [(a + b) / 2 for a, b in zip(st, en)]
+
+
+def chunks(text):
+    out_, cur = [], ""
+    for sent in re.split(r"(?<=[.?!])\s+", text.strip()):
+        for w in sent.split():
+            if cur and len(cur) + 1 + len(w) > CC_MAXCH:
+                out_.append(cur); cur = w
+            else:
+                cur = f"{cur} {w}".strip()
+        if cur and len(cur) > CC_MAXCH * 0.45:
+            out_.append(cur); cur = ""
+    if cur:
+        out_.append(cur)
+    return out_
+
+
+def cc_png(text, path, font):
+    words, lines, cur = text.split(), [], ""
+    for w in words:
+        t = f"{cur} {w}".strip()
+        if cur and font.getlength(t) > CC_W:
+            lines.append(cur); cur = w
+        else:
+            cur = t
+    lines.append(cur)
+    img = Image.new("RGBA", (1080, 1920), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
+    lh = int(CC_FS * 1.5); h = lh * len(lines) + 36
+    bw = int(max(font.getlength(l) for l in lines)) + 64
+    cx = 110 + 400  # centre of the safe column (x 110-910)
+    y1 = 1505 - h   # box sits above the bottom 20% (y 1536+)
+    d.rounded_rectangle([cx - bw // 2, y1, cx + bw // 2, y1 + h], 24, fill=(0, 0, 0, 170))
+    for k, l in enumerate(lines):
+        d.text((cx, y1 + 18 + k * lh + lh // 2), l, font=font, fill=(255, 255, 255, 255), anchor="mm",
+               stroke_width=2, stroke_fill=(0, 0, 0, 255))
+    img.save(path)
+
+
+def srt_time(x):
+    ms = int(round(x * 1000)); h, ms = divmod(ms, 3600000); m, ms = divmod(ms, 60000); s_, ms = divmod(ms, 1000)
+    return f"{h:02}:{m:02}:{s_:02},{ms:03}"
+
+
+cues = []
+if script and script.get("voice"):
+    parts = [x.strip() for x in script["voice"].split("...") if x.strip()]
+    if len(parts) == len(durs):
+        spans = [(cuts[i], min(cuts[i + 1], vdur)) for i in range(len(parts))]
+    else:  # parts don't line up with scenes: spread the whole text over the voice
+        parts, spans = [" ".join(parts)], [(0.0, vdur)]
+    pz = pauses(f"{out}/voice.wav")
+    for text, (a, b) in zip(parts, spans):
+        ch = chunks(text); tot = sum(len(c) for c in ch); t = a
+        for k, c in enumerate(ch):
+            end = b if k == len(ch) - 1 else t + (b - a) * len(c) / tot
+            near = [p for p in pz if abs(p - end) < 0.6 and t + 0.6 < p < b - 0.4]
+            if k < len(ch) - 1 and near:
+                end = min(near, key=lambda p: abs(p - end))
+            cues.append((t, end, c)); t = end
+    font = ImageFont.truetype(FONT, CC_FS, layout_engine=ImageFont.Layout.RAQM)
+    try:
+        font.set_variation_by_axes([700, 100])
+    except Exception:
+        pass
+    for k, (a, b, c) in enumerate(cues):
+        cc_png(c, f"{out}/cc{k}.png", font)
+    with open(os.path.splitext(dst)[0] + ".srt", "w") as f:
+        for k, (a, b, c) in enumerate(cues, 1):
+            f.write(f"{k}\n{srt_time(a)} --> {srt_time(b)}\n{c}\n\n")
+
 # video: each scene a slow zoom, joined with short crossfades
 inputs, filt = [], []
 for i, d in enumerate(durs):
@@ -51,11 +137,18 @@ for i in range(1, len(durs)):
     off += durs[i - 1]
     filt.append(f"[{prev}][v{i}]xfade=transition=fade:duration={XF}:offset={off - 0:.3f}[x{i}]")
     prev = f"x{i}"
-na = len(durs)
+for k, (a, b, c) in enumerate(cues):
+    inputs += ["-loop", "1", "-t", f"{total:.3f}", "-i", f"{out}/cc{k}.png"]
+    j = len(durs) + k
+    filt.append(f"[{prev}][{j}:v]overlay=0:0:enable='between(t,{a:.3f},{b:.3f})'[c{k}]")
+    prev = f"c{k}"
+na = len(durs) + len(cues)
 inputs += ["-i", f"{out}/voice.wav", "-i", f"{out}/music.wav"]
 filt.append(f"[{na}:a]aresample=48000,apad=whole_dur={total:.3f},volume=1.6[va];[{na+1}:a]aresample=48000[ma];[va][ma]amix=inputs=2:normalize=0,loudnorm=I=-15:TP=-1.5[a]")
 cmd = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", *inputs, "-filter_complex", ";".join(filt),
        "-map", f"[{prev}]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS),
        "-c:a", "aac", "-b:a", "160k", "-t", f"{total:.3f}", "-movflags", "+faststart", dst]
 subprocess.run(cmd, check=True)
-print("ok", round(total, 2), [round(d, 2) for d in durs])
+print("ok", round(total, 2), [round(d, 2) for d in durs], f"{len(cues)} captions")
+if not 15 <= total <= 90:
+    print(f"WARNING: reel is {total:.1f} s; reels and Shorts must be 15-90 s")
