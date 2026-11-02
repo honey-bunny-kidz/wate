@@ -130,6 +130,27 @@ ART = {
   <ellipse cx='295' cy='255' rx='55' ry='42' fill='#8D99AE'/><ellipse cx='240' cy='180' rx='40' ry='32' fill='#A3AAB8'/><ellipse cx='355' cy='190' rx='45' ry='35' fill='#8D99AE'/></g>
   <g fill='#E9C46A'><circle cx='300' cy='175' r='6'/><circle cx='205' cy='255' r='5'/><circle cx='395' cy='260' r='6'/><circle cx='300' cy='320' r='5'/><circle cx='215' cy='395' r='4'/></g>
 </svg>""",
+ "ice": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='260' r='220' fill='{SUN}' opacity='.15'/>
+  <rect x='150' y='150' width='230' height='230' rx='34' fill='#BDE6F5' stroke='{CREAM}' stroke-width='10'/>
+  <path d='M175 185 h60 M175 205 h30' stroke='#fff' stroke-width='12' stroke-linecap='round' opacity='.9'/>
+  <rect x='170' y='370' width='190' height='14' rx='7' fill='#8FD3EA' opacity='.6'/>
+  <rect x='440' y='90' width='44' height='300' rx='22' fill='{CREAM}'/><circle cx='462' cy='410' r='42' fill='#5EC4E8'/>
+  <rect x='452' y='250' width='20' height='150' rx='10' fill='#5EC4E8'/>
+  <g stroke='{DEEP}' stroke-width='5'><line x1='440' y1='130' x2='458' y2='130'/><line x1='440' y1='180' x2='458' y2='180'/><line x1='440' y1='230' x2='458' y2='230'/><line x1='440' y1='280' x2='458' y2='280'/><line x1='440' y1='330' x2='458' y2='330'/></g>
+  <text x='300' y='475' font-family='Poppins' font-weight='800' font-size='54' fill='{SUN}' text-anchor='middle'>-5° -4° -3°</text></svg>""",
+ "ice_melt": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='260' r='220' fill='{SUN}' opacity='.15'/>
+  <ellipse cx='270' cy='405' rx='190' ry='40' fill='#5EC4E8' opacity='.75'/>
+  <path d='M175 395 C165 300 190 240 230 230 h90 C360 235 380 300 368 395z' fill='#BDE6F5' stroke='{CREAM}' stroke-width='8'/>
+  <path d='M200 270 h40' stroke='#fff' stroke-width='12' stroke-linecap='round' opacity='.9'/>
+  <path d='M300 120 C285 150 275 165 275 180 a25 25 0 0 0 50 0 C325 165 315 150 300 120z' fill='#5EC4E8'/>
+  <path d='M430 405 C424 375 438 350 455 340 M455 340 c-25 -5 -40 -25 -40 -45 c25 0 40 20 40 45 M455 340 c25 -5 40 -25 40 -45 c-25 0 -40 20 -40 45' stroke='#3FAE6B' stroke-width='9' fill='#57C77F' stroke-linecap='round'/>
+  <circle cx='470' cy='130' r='62' fill='{SUN}'/><text x='470' y='152' font-family='Poppins' font-weight='800' font-size='62' fill='{DEEP}' text-anchor='middle'>0°</text></svg>""",
+ "alarm": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='260' r='220' fill='{SUN}' opacity='.15'/>
+  <path d='M150 150 a60 60 0 0 1 85 -60' stroke='{SUN}' stroke-width='22' fill='none' stroke-linecap='round'/><path d='M450 150 a60 60 0 0 0 -85 -60' stroke='{SUN}' stroke-width='22' fill='none' stroke-linecap='round'/>
+  <line x1='200' y1='420' x2='170' y2='465' stroke='{CREAM}' stroke-width='16' stroke-linecap='round'/><line x1='400' y1='420' x2='430' y2='465' stroke='{CREAM}' stroke-width='16' stroke-linecap='round'/>
+  <circle cx='300' cy='275' r='170' fill='{CREAM}'/><circle cx='300' cy='275' r='145' fill='#fff' stroke='#E76F51' stroke-width='10'/>
+  <text x='300' y='330' font-family='Poppins' font-weight='800' font-size='150' fill='#E76F51' text-anchor='middle'>5</text>
+  <g font-family='Poppins' font-weight='800' font-size='40' fill='{DEEP}' text-anchor='middle' opacity='.55'><text x='300' y='170'>4</text><text x='400' y='290'>3</text><text x='300' y='405'>2</text><text x='200' y='290'>1</text></g></svg>""",
 }
 
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>
