@@ -16,11 +16,11 @@ Every day: one Sinhala text post at **7:30 AM** and one Sinhala reel at **8:00 P
 2. Pick today's theme from `trends.md` (rotate; check the date hooks first), paired with one idea from a positive thinking book. Retell ideas in our own words; never quote books at length.
 3. **Reel for today 8:00 PM** (if not already scheduled):
    - Write 6–9 scenes in `rYYYYMMDD.json` (see `r20261102.json`): `"voice"` (spoken text, one part per scene separated by ` ... `), and per scene: art name, SHORT Sinhala headline (`<b>` = amber highlight), optional kicker. Last scene = `endcard` with the share ask.
-     Art available in `scenes.py`: books, note_cant, note_yet, plant, steps, endcard, rain_cloud, paddy, glasses, bulb, rain_sun, frog, trophy, hourglass, phone_off, heart, tea, five, rocks_jar. Add new SVG art in `ART` when the theme needs it (keep the teal #0F5257 / amber #F4A623 / cream style).
+     Art available in `scenes.py`: books, note_cant, note_yet, plant, steps, endcard, rain_cloud, paddy, glasses, bulb, rain_sun, frog, trophy, hourglass, phone_off, heart, tea, five, rocks_jar, ice, ice_melt, alarm. Add new SVG art in `ART` when the theme needs it (keep the teal #0F5257 / amber #F4A623 / cream style).
    - Voice: Google AI Studio → https://aistudio.google.com/generate-speech in the user's Chrome (already signed in). Create new dialog, paste the full voiceover (scenes separated by ` ... `), Style: "Warm, calm and encouraging native Sri Lankan Sinhala speaker, like a kind older sibling. Clear pronunciation, gentle pace, short pause between sentences." On the landing page the cards jump down once the page finishes loading — take a screenshot before clicking "Create new dialog". Run, then click the player's Download button (the user approved this daily). File lands in `/Users/thilanmj/Downloads/Generated Audio <date> - <time>.wav`; stage it with device_stage_files and copy to `out/voice.wav`.
    - `ffmpeg -i out/voice.wav -af silencedetect=n=-38dB:d=0.35 -f null -` → pick the 5 scene boundaries at the middle of the pauses between scenes.
      If too few pauses show up, use `n=-32dB:d=0.2`, estimate each boundary from the share of Sinhala letters per scene (letters / total × voice length) and snap to the nearest pause; check the last scene's internal pauses make sense.
-     Voice speed ≈ 10–12 Sinhala letters per second (29 Oct: ~500 letters → 39.8 s; 31 Oct: 247 → 27.4 s). For a 40–60 s reel write ~450–650 letters; never more than ~950 (90 s cap); at least ~150 (15 s).
+     Voice speed ≈ 10–12 Sinhala letters per second (29 Oct: ~500 letters → 39.8 s; 31 Oct: 247 → 27.4 s; 2 Nov: 256 → 28.3 s). For a 40–60 s reel write ~450–650 letters; never more than ~950 (90 s cap); at least ~150 (15 s).
    - `python3 scenes.py rYYYYMMDD.json out && python3 build.py out "b1,…,bN-1" out/epositive_reel_YYYYMMDD.mp4 rYYYYMMDD.json` (one boundary per scene change) then grab frames and LOOK at them (headline and captions inside the safe zones, captions match the voice, nothing clipped). Push the `.srt` with the MP4 (for YouTube Shorts uploads later).
    - Push the MP4 to `epositive/` in this repo; Buffer reel URL = `https://raw.githubusercontent.com/honey-bunny-kidz/wate/main/epositive/<file>`; `create_post` with metadata.facebook.type = "reel", assets = [{"video":{"url":…,"metadata":{"title":…}}}], customScheduled 20:00:00+05:30.
 4. **Post for tomorrow 7:30 AM** (if not scheduled). EVERY post has an image — never text-only (text-only posts reached 3 people in week 1).
@@ -38,6 +38,8 @@ Every day: one Sinhala text post at **7:30 AM** and one Sinhala reel at **8:00 P
 4d. **Sunday review**: get_aggregated_post_metrics for the last 7 days plus per-post numbers (list_posts sent); note which topics/formats got most reach and shares in `epositive/pipeline/metrics.md` (date, post, format, impressions, reactions, comments, shares) and lean the next week toward the winners.
 5. Delete reels from `epositive/` once Buffer shows them sent.
 6. Buffer free plan: max 10 scheduled posts across ALL pages. If full, schedule the reel first.
+
+- If the device bridge is offline after the voice download, the WAV is also in the AI Studio page as an `<audio>` data URL; retry staging later rather than regenerating.
 
 ## Setup in a fresh session
 - Fonts: `git clone --depth 1 --filter=blob:none --sparse https://github.com/google/fonts gfonts && cd gfonts && git sparse-checkout set ofl/notosanssinhala && mkdir -p ~/.fonts && cp ofl/notosanssinhala/*.ttf ~/.fonts/ && fc-cache -f`
