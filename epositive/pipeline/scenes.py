@@ -137,7 +137,7 @@ ART = {
   <rect x='440' y='90' width='44' height='300' rx='22' fill='{CREAM}'/><circle cx='462' cy='410' r='42' fill='#5EC4E8'/>
   <rect x='452' y='250' width='20' height='150' rx='10' fill='#5EC4E8'/>
   <g stroke='{DEEP}' stroke-width='5'><line x1='440' y1='130' x2='458' y2='130'/><line x1='440' y1='180' x2='458' y2='180'/><line x1='440' y1='230' x2='458' y2='230'/><line x1='440' y1='280' x2='458' y2='280'/><line x1='440' y1='330' x2='458' y2='330'/></g>
-  <text x='300' y='475' font-family='Poppins' font-weight='800' font-size='54' fill='{SUN}' text-anchor='middle'>-5° -4° -3°</text></svg>""",
+  <text x='265' y='470' font-family='Poppins' font-weight='800' font-size='48' fill='{SUN}' text-anchor='middle'>-5° -4° -3°</text></svg>""",
  "ice_melt": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='260' r='220' fill='{SUN}' opacity='.15'/>
   <ellipse cx='270' cy='405' rx='190' ry='40' fill='#5EC4E8' opacity='.75'/>
   <path d='M175 395 C165 300 190 240 230 230 h90 C360 235 380 300 368 395z' fill='#BDE6F5' stroke='{CREAM}' stroke-width='8'/>

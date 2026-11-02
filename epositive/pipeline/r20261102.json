@@ -1,0 +1,13 @@
+{
+ "date": "2026-11-02",
+ "topic": "O/L courage / keep going when results don't show yet: the ice cube that melts at 0 degrees (James Clear, Atomic Habits - Plateau of Latent Potential)",
+ "voice": "හැමදාම පාඩම් කරනවා. ඒත් කිසි වෙනසක් නෑ වගේද? ... අයිස් කැටයක් හිතන්න. සීතල ටික ටික අඩු වෙනවා. ඒත් අයිස් එහෙමමයි. ... හරියටම බිංදුවට ආවම විතරයි, අයිස් දියවෙන්න පටන් ගන්නේ. ... ඔයාගේ මහන්සිය නාස්ති වෙන්නේ නෑ. ඒක ඇතුළෙන් එකතු වෙනවා. ... ඉතින් අදත් විනාඩි විසිපහක් පාඩම් කරන්න. දිගටම යන්න. ... ඔයා දිගටම යනවා නම්, දිගටම කියලා කමෙන්ට් කරන්න.",
+ "scenes": [
+  {"art": "ice", "caption": "පාඩම් කරනවා,<br><b>වෙනසක් නෑ</b>?", "kicker": ""},
+  {"art": "ice", "caption": "සීතල අඩු වෙනවා...<br>ඒත් අයිස් <b>එහෙමමයි</b>.", "kicker": "James Clear · Atomic Habits"},
+  {"art": "ice_melt", "caption": "<b>0°</b> ආවම විතරයි<br>අයිස් <b>දියවෙන්නේ</b>.", "kicker": ""},
+  {"art": "plant", "caption": "ඔයාගේ මහන්සිය<br><b>නාස්ති නෑ</b>.<br>ඒක එකතු වෙනවා.", "kicker": ""},
+  {"art": "books", "caption": "අදත් <b>විනාඩි 25ක්</b>.<br>දිගටම යන්න.", "kicker": ""},
+  {"art": "endcard", "caption": "<b>\"දිගටම\"</b> කියලා<br>කමෙන්ට් කරන්න 👇", "kicker": "E Positive · හැමදාම ඔයා එක්ක"}
+ ]
+}
