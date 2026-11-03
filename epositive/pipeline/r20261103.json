@@ -1,0 +1,42 @@
+{
+ "date": "2026-11-03",
+ "topic": "Less scrolling, more living: you charge your phone every night, but do you charge yourself? (Loehr & Schwartz, The Power of Full Engagement - manage energy, not time; recover every ~90 min)",
+ "voice": "ඔයාගේ ෆෝන් එකට හැමදාම රෑට charge කරනවා. ඒත් ඔයාට? ... ෆෝන් එක දහයට වැටුණම අපි කලබල වෙනවා. ඒත් අපේම බැටරිය දහයට වැටිලා තියෙද්දිත්, අපි දිගටම scroll කරනවා. ... එක පොතක ලස්සන අදහසක් තියෙනවා. වැදගත් වෙන්නේ වැඩිපුර වෙලාව නෙමෙයි. හොඳ ශක්තිය. ශක්තිය නැතුව පැය ගණන් වාඩි වෙලා හිටියට වැඩක් නෑ. ... ඒ ශක්තිය එන්නේ විවේකයෙන්. හොඳ නින්දක්. ෆෝන් එක නැති විනාඩි කීපයක්. ... පැය එකහමාරකට සැරයක්, විනාඩි පහක් නැගිටලා ඇවිදින්න. වතුර ටිකක් බොන්න. ඈත බලන්න. ... අද රෑ නිදාගන්න පැයකට කලින්, ෆෝන් එක charge එකට ගහලා, ඔයාත් charge වෙන්න. හෙට උදේ ඔයා අලුත් කෙනෙක් වගේ නැගිටියි. ... ඔයාත් අද charge වෙනවා නම් බැටරි ඉමෝජියක් දාන්න. මේක හැමදාම මහන්සි වෙන තාත්තට share කරන්න.",
+ "scenes": [
+  {
+   "art": "battery_low",
+   "caption": "ෆෝන් එකට 🔋<br><b>ඔයාට</b>?",
+   "kicker": ""
+  },
+  {
+   "art": "phone_off",
+   "caption": "අපේ බැටරිය <b>10%</b>,<br>ඒත් තාම scroll...",
+   "kicker": ""
+  },
+  {
+   "art": "bulb",
+   "caption": "වෙලාව නෙමෙයි,<br><b>ශක්තිය</b>.",
+   "kicker": "The Power of Full Engagement"
+  },
+  {
+   "art": "tea",
+   "caption": "ශක්තිය එන්නේ<br><b>විවේකයෙන්</b>.",
+   "kicker": ""
+  },
+  {
+   "art": "five",
+   "caption": "පැය 1½ට සැරයක්<br><b>විනාඩි 5ක්</b>.",
+   "kicker": ""
+  },
+  {
+   "art": "battery_full",
+   "caption": "අද රෑ<br><b>ඔයාත් charge</b> වෙන්න.",
+   "kicker": ""
+  },
+  {
+   "art": "endcard",
+   "caption": "මහන්සි වෙන <b>තාත්තට</b><br><b>share</b> කරන්න 🔁",
+   "kicker": "E Positive · 🔋 කමෙන්ට් කරන්න"
+  }
+ ]
+}

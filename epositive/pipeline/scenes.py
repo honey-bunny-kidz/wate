@@ -153,6 +153,18 @@ ART = {
   <circle cx='300' cy='275' r='170' fill='{CREAM}'/><circle cx='300' cy='275' r='145' fill='#fff' stroke='#E76F51' stroke-width='10'/>
   <text x='300' y='330' font-family='Poppins' font-weight='800' font-size='150' fill='#E76F51' text-anchor='middle'>5</text>
   <g font-family='Poppins' font-weight='800' font-size='40' fill='{DEEP}' text-anchor='middle' opacity='.55'><text x='300' y='170'>4</text><text x='400' y='290'>3</text><text x='300' y='405'>2</text><text x='200' y='290'>1</text></g></svg>""",
+ "battery_low": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='260' r='220' fill='{SUN}' opacity='.15'/>
+  <rect x='110' y='150' width='340' height='200' rx='34' fill='none' stroke='{CREAM}' stroke-width='20'/><rect x='450' y='210' width='40' height='80' rx='12' fill='{CREAM}'/>
+  <rect x='138' y='178' width='46' height='144' rx='14' fill='#E76F51'/>
+  <text x='300' y='292' font-family='Poppins' font-weight='800' font-size='96' fill='#E76F51' text-anchor='middle'>10%</text>
+  <g font-family='Poppins' font-weight='800' font-size='70' fill='{SUN}'><text x='470' y='130'>!</text></g>
+  <path d='M150 440 q60 -50 120 0 t120 0 t120 0' stroke='{CREAM}' stroke-width='8' fill='none' opacity='.5'/></svg>""",
+ "battery_full": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='260' r='220' fill='{SUN}' opacity='.18'/>
+  <rect x='110' y='150' width='340' height='200' rx='34' fill='none' stroke='{CREAM}' stroke-width='20'/><rect x='450' y='210' width='40' height='80' rx='12' fill='{CREAM}'/>
+  <rect x='138' y='178' width='284' height='144' rx='16' fill='#3FAE6B'/>
+  <path d='M300 185 l-55 75 h45 l-20 60 l70 -85 h-45 l25 -50z' fill='{CREAM}'/>
+  <path d='M480 90 a45 45 0 1 0 30 80 a55 55 0 0 1 -30 -80z' fill='{SUN}'/>
+  <g fill='{CREAM}'><circle cx='110' cy='100' r='7'/><circle cx='170' cy='60' r='5'/><circle cx='540' cy='420' r='6'/></g></svg>""",
 }
 
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>

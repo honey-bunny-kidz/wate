@@ -68,6 +68,9 @@ def chunks(text):
             out_.append(cur); cur = ""
     if cur:
         out_.append(cur)
+    # don't leave a lone short word (e.g. "කරන්න.") as its own flash cue: merge it back
+    if len(out_) > 1 and len(out_[-1]) < 12 and len(out_[-2]) + 1 + len(out_[-1]) <= CC_MAXCH * 1.3:
+        last = out_.pop(); out_[-1] = out_[-1] + " " + last
     return out_
 
 
@@ -109,7 +112,8 @@ if script and script.get("voice"):
         ch = chunks(text); tot = sum(len(c) for c in ch); t = a
         for k, c in enumerate(ch):
             end = b if k == len(ch) - 1 else t + (b - a) * len(c) / tot
-            near = [p for p in pz if abs(p - end) < 0.6 and t + 0.6 < p < b - 0.4]
+            rest = (b - a) * sum(len(x) for x in ch[k + 1:]) / tot  # time the remaining chunks need
+            near = [p for p in pz if abs(p - end) < 0.6 and t + 0.6 < p < b - max(0.4, 0.7 * rest)]
             if k < len(ch) - 1 and near:
                 end = min(near, key=lambda p: abs(p - end))
             cues.append((t, end, c)); t = end
