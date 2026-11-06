@@ -37,6 +37,19 @@ ART = {
   </g>
   <path d='M330 210 l11 -26 l11 26' fill='none' stroke='#E07B00' stroke-width='6' stroke-linecap='round' transform='rotate(-3 300 260)'/>
  </svg>""",
+ "trees": f"""<svg viewBox='0 0 600 520' width='760'>
+  <circle cx='300' cy='250' r='230' fill='{SUN}' opacity='.12'/>
+  <rect x='40' y='470' width='520' height='14' rx='7' fill='#2E8B57'/>
+  <rect x='130' y='250' width='26' height='222' rx='10' fill='#8DB85A'/>
+  <path d='M143 255 C90 230 60 190 55 140 C105 165 135 205 143 255z' fill='#3FAE6B'/>
+  <path d='M143 255 C200 225 225 180 225 130 C180 160 150 205 143 255z' fill='#57C77F'/>
+  <path d='M143 250 C130 200 140 150 160 110 C170 160 160 210 143 250z' fill='#7EDB98'/>
+  <g fill='#F4D35E'><ellipse cx='170' cy='300' rx='9' ry='26' transform='rotate(-25 170 300)'/><ellipse cx='186' cy='306' rx='9' ry='26' transform='rotate(-15 186 306)'/><ellipse cx='155' cy='306' rx='9' ry='26' transform='rotate(-35 155 306)'/></g>
+  <rect x='410' y='300' width='34' height='172' rx='12' fill='#8B5A2B'/>
+  <path d='M427 330 L380 280 M427 320 L470 270' stroke='#8B5A2B' stroke-width='14' stroke-linecap='round'/>
+  <circle cx='427' cy='200' r='118' fill='#2E8B57'/><circle cx='360' cy='240' r='70' fill='#3FAE6B'/><circle cx='495' cy='235' r='72' fill='#3FAE6B'/><circle cx='430' cy='130' r='70' fill='#57C77F'/>
+  <g fill='{SUN}'><ellipse cx='380' cy='250' rx='16' ry='22'/><ellipse cx='470' cy='265' rx='16' ry='22'/><ellipse cx='430' cy='180' rx='16' ry='22'/><ellipse cx='505' cy='200' rx='16' ry='22'/></g>
+ </svg>""",
  "plant": f"""<svg viewBox='0 0 600 520' width='760'>
   <circle cx='470' cy='110' r='70' fill='{SUN}'/>
   <g stroke='{SUN}' stroke-width='8' stroke-linecap='round' opacity='.8'><line x1='470' y1='15' x2='470' y2='0'/><line x1='565' y1='110' x2='590' y2='110'/><line x1='537' y1='43' x2='552' y2='28'/></g>

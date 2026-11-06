@@ -1,0 +1,14 @@
+{
+ "date": "2026-11-06",
+ "topic": "Less scrolling, more living / stop comparing: everyone online looks ahead of you, but you only see their best seconds; banana tree fruits in a year, mango tree takes years but lives a century - every tree has its own time (Brené Brown, The Gifts of Imperfection - letting go of comparison)",
+ "voice": "ෆෝන් එක බලනකොට, හැමෝම ඔයාට වඩා ඉස්සරහින් ඉන්නවා වගේද? ... යාළුවන්ට අලුත් ජොබ්. අලුත් බයික්. විදේශ ගමන්. අපි හිතනවා, මම විතරක් පස්සෙන් කියලා. ... ඒත් මතක තියාගන්න. ඔයා දකින්නේ අනුන්ගේ හොඳම තත්පර කීපය විතරයි. ඔයාගේ මුළු කතාවම ඔයා දන්නවා. ... එක පොතක ලස්සන අදහසක් තියෙනවා. අනුන් එක්ක සසඳන තරමට, අපේ සතුට නිහඬවම අඩු වෙනවා. ... කෙසෙල් ගහ අවුරුද්දකින් ගෙඩි දෙනවා. අඹ ගහට අවුරුදු ගාණක් යනවා. ඒත් අඹ ගහ අවුරුදු සියයකටත් වඩා පල දෙනවා. ... ඉතින් අද රෑ, ඊයේට වඩා ඔයා දියුණු වුණ එක දෙයක් හිතන්න. ඔයාගේ තරගය ඊයේ ඔයා එක්ක විතරයි. ... ඔයා එකඟ නම් අඹ ඉමෝජියක් දාන්න. ඔයාගේ හොඳම යාළුවාට මේක share කරන්න.",
+ "scenes": [
+  {"art": "phone_off", "caption": "හැමෝම <b>ඉස්සරහින්</b>ද?", "kicker": ""},
+  {"art": "battery_low", "caption": "මම විතරක්<br><b>පස්සෙන්</b>?", "kicker": ""},
+  {"art": "glasses", "caption": "ඔයා දකින්නේ<br><b>හොඳම</b> තත්පර.", "kicker": ""},
+  {"art": "heart", "caption": "සසඳන තරමට<br>සතුට <b>අඩුයි</b>.", "kicker": "The Gifts of Imperfection · Brené Brown"},
+  {"art": "trees", "caption": "හැම ගහටම<br><b>තමන්ගේ</b> කාලය.", "kicker": ""},
+  {"art": "steps", "caption": "තරගය <b>ඊයේ ඔයා</b><br>එක්ක විතරයි.", "kicker": ""},
+  {"art": "endcard", "caption": "<b>හොඳම යාළුවාට</b><br><b>share</b> කරන්න 🔁", "kicker": "E Positive · 🥭 කමෙන්ට් කරන්න"}
+ ]
+}
