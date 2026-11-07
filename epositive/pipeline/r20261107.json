@@ -1,0 +1,14 @@
+{
+ "date": "2026-11-07",
+ "topic": "O/L exam courage / stress reframe: a racing heart before an exam or interview is not weakness, it is your body getting energy ready - say 'I'm ready' instead of 'I'm scared', slow breath (Kelly McGonigal, The Upside of Stress - rethinking stress as energy)",
+ "voice": "විභාගෙට කලින් හදවත වේගයෙන් ගැහෙනවද? ... අත් දාඩිය දානවා. බඩේ සමනළයෝ පියාඹනවා වගේ. අපි හිතනවා, මම බය වෙලා, මට බැහැ කියලා. ... ඒත් එක පොතක පුදුම අදහසක් තියෙනවා. ඒ ගැහෙන හදවත ඔයාගේ සතුරා නෙමෙයි. ඔයාගේ ශරීරය ඔයාට ශක්තිය එකතු කරනවා. ... ක්‍රීඩකයෙක් තරඟෙට කලින් හදවත ගැහෙන්නේ, දුවන්න ලෑස්ති වෙන්න. ඔයාගෙත් එහෙමමයි. ... ඉතින් ඊළඟ වතාවේ, මම බයයි කියනවා වෙනුවට, මම ලෑස්තියි කියන්න. හෙමින් හුස්මක් අරන්, තුනක් ගණන් කරන්න. ... O/L වලට තව දවස් තිස් එකයි. බය හිතෙන එක සාමාන්‍යයි. ඒක ඔයාව ඉස්සරහට තල්ලු කරන ශක්තියක් කරගන්න. ... එකඟ නම් ලෑස්තියි කියලා කමෙන්ට් කරන්න. විභාගෙකට හරි ඉන්ටර්වියු එකකට හරි ලෑස්ති වෙන කෙනෙක්ට මේක share කරන්න.",
+ "scenes": [
+  {"art": "heart", "caption": "හදවත<br><b>දුවනවද?</b>", "kicker": ""},
+  {"art": "battery_low", "caption": "<b>මට බැහැ</b><br>වගේද?", "kicker": ""},
+  {"art": "battery_full", "caption": "ඒක බය නෙමෙයි,<br><b>ශක්තිය.</b>", "kicker": "The Upside of Stress · Kelly McGonigal"},
+  {"art": "trophy", "caption": "තරඟෙට<br><b>ලෑස්තියි.</b>", "kicker": ""},
+  {"art": "bulb", "caption": "කියන්න:<br><b>මම ලෑස්තියි</b>", "kicker": "හුස්ම · 1 · 2 · 3"},
+  {"art": "books", "caption": "O/L වලට<br>දවස් <b>31</b>", "kicker": ""},
+  {"art": "endcard", "caption": "<b>ලෑස්ති වෙන</b> කෙනෙක්ට<br><b>share</b> කරන්න 🔁", "kicker": "E Positive · 'ලෑස්තියි' කමෙන්ට් කරන්න"}
+ ]
+}
