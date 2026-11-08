@@ -1,0 +1,14 @@
+{
+ "date": "2026-11-08",
+ "topic": "Deepavali light over darkness + negativity bias: one match lights a room that was dark for years; bad moments stick like thorns, good ones slide off like water on a lotus leaf - hold a good moment for 10 seconds (Rick Hanson, Hardwiring Happiness - taking in the good)",
+ "voice": "අඳුරු කාමරේකට එක ගිනිකූරක් ගැහුවම, අඳුර නැති වෙන්න කොච්චර වෙලා යනවද? ... තත්පරයක්වත් යන්නේ නෑ. අඳුරට අවුරුදු ගාණක් තිබුණත්, එළියට ඕනේ එක මොහොතයි. ... ඒත් අපේ හිතේ පොඩි ප්‍රශ්නයක් තියෙනවා. නරක දේවල් කටු වගේ ඇලෙනවා. හොඳ දේවල් නෙළුම් කොළේ වතුර වගේ ලිස්සලා යනවා. ... එක පොතක් කියන්නේ, හොඳ මොහොතක් ආවම, තත්පර දහයක් ඒක හිතට ගන්න කියලා. අම්මගේ හිනාව, උණු තේ එක, යාළුවෙක්ගේ මැසේජ් එක. ... එතකොට ඒ හොඳ මොහොත හිතේ පහනක් වගේ පත්තු වෙලා තියෙනවා. ... අද දීපාවලි. අද රෑ එක හොඳ මොහොතක් තත්පර දහයක් හිතේ තියාගන්න. ... කළා නම් පහනක් කමෙන්ට් කරන්න. ඔයාගේ ජීවිතේට එළිය ගෙනාපු කෙනෙක්ට මේක share කරන්න.",
+ "scenes": [
+  {"art": "lamp_one", "caption": "එක <b>ගිනිකූරක්</b><br>කොච්චර වෙලාද?", "kicker": ""},
+  {"art": "bulb", "caption": "<b>එක මොහොතයි.</b>", "kicker": ""},
+  {"art": "rain_cloud", "caption": "නරක <b>ඇලෙනවා</b>,<br>හොඳ ලිස්සනවා", "kicker": ""},
+  {"art": "heart", "caption": "හොඳ මොහොතට<br>තත්පර <b>10</b>", "kicker": "Hardwiring Happiness · Rick Hanson"},
+  {"art": "lamps_two", "caption": "හිතේ<br><b>පහනක්</b>", "kicker": ""},
+  {"art": "lamps_row", "caption": "සුබ<br><b>දීපාවලියක්</b> 🪔", "kicker": ""},
+  {"art": "endcard", "caption": "<b>එළිය ගෙනාපු</b> කෙනෙක්ට<br><b>share</b> කරන්න 🔁", "kicker": "E Positive · 🪔 කමෙන්ට් කරන්න"}
+ ]
+}
