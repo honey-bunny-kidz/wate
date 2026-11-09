@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-09",
+ "topic": "Coconut / stonecutter: the coconut doesn't break on the last hit, every hit before it did the work; habits and O/L revision work the same way before results show (James Clear, Atomic Habits - the stonecutter and the plateau of latent potential). O/L 29 days to go.",
+ "voice": "පොල් ගෙඩියක් බිඳෙන්නේ, අන්තිම පාරට ගැහුවමද? ... පාරක් ගහනවා. දෙකක්, දහයක්, පනහක්, සීයක්. පොඩි ඉරිතැලීමක්වත් පේන්නේ නෑ. ... ඒත් එකසිය එක්වෙනි පාරට, ගෙඩිය දෙකට පැලෙනවා. ... එතකොට බින්දේ අන්තිම පාරද? නෑ. ඊට කලින් ගහපු හැම පාරක්ම. ... ඇටොමික් හැබිට්ස් පොතේ කියන්නේ, පුරුදුත් මෙහෙමයි කියලා. මුලින් කිසිම වෙනසක් පේන්නේ නෑ. ඒත් ඇතුළෙන් වැඩ වෙනවා. ... O/L වලට තව දවස් විසිනවයයි. අද කරන පැය භාගේ පාඩමත්, එක පාරක්. ... ප්‍රතිඵල පේන්නේ නැති දවසට අත්හරින්න එපා. ඔයා දැනටමත් ඉරිතලන්න ළඟයි. ... එකඟ නම් පොල් ගෙඩියක් කමෙන්ට් කරන්න. මහන්සි වෙලා පාඩම් කරන ඔයාගේ මල්ලිට හරි නංගිට හරි මේක share කරන්න.",
+ "scenes": [
+  {"art": "coconut", "caption": "පොල් ගෙඩිය බිඳුණේ<br><b>අන්තිම</b> පාරටද?", "kicker": ""},
+  {"art": "coconut_hits", "caption": "<b>100</b> පාරක්…<br>ඉරිතැලීමක් නෑ", "kicker": ""},
+  {"art": "coconut_crack", "caption": "<b>101</b> වෙනි පාර!", "kicker": ""},
+  {"art": "steps", "caption": "<b>හැම</b> පාරක්ම", "kicker": ""},
+  {"art": "plant", "caption": "ඇතුළෙන්<br><b>වැඩ</b> වෙනවා", "kicker": "Atomic Habits · James Clear"},
+  {"art": "books", "caption": "O/L: දවස් <b>29</b>", "kicker": ""},
+  {"art": "trophy", "caption": "අත්හරින්න <b>එපා</b>", "kicker": ""},
+  {"art": "endcard", "caption": "<b>මල්ලිට / නංගිට</b><br><b>share</b> කරන්න 🔁", "kicker": "E Positive · 🥥 කමෙන්ට් කරන්න"}
+ ]
+}
