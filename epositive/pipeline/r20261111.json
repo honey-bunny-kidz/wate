@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-11",
+ "topic": "Dark glasses: thoughts are not facts. One wrong answer makes us think 'I know nothing' or 'I will surely fail' (all-or-nothing, fortune telling). Ask: what's the evidence, what would I tell a friend? (David Burns, Feeling Good - cognitive distortions). O/L 27 days to go. Wednesday book-in-a-minute.",
+ "voice": "කළු කණ්ණාඩියක් දාගත්තම, හොඳම දවසත් අඳුරුයි නේද? ... අපේ හිතුවිලිත් කණ්ණාඩි වගේ. එක ප්‍රශ්නයක් වැරදුනාම, මම මුකුත් දන්නේ නෑ කියලා හිතෙනවා. ... මම අනිවාර්යයෙන්ම ෆේල් වෙනවා කියලත් හිතෙනවා. ඒත් ඒ, හෙට ගැන අනුමානයක් විතරයි. ... ෆීලින් ගුඩ් පොතේ ඩේවිඩ් බර්න්ස් කියන්නේ, හිතුවිල්ලක් කියන්නේ ඇත්තක් නෙමෙයි කියලා. ... ඉතින් අහගන්න. මේකට සාක්ෂි මොනවද? මගේ යාළුවෙක්ට නම්, මම මොකක්ද කියන්නේ? ... එතකොට කණ්ණාඩිය ගැලවෙනවා. මම මුකුත් දන්නේ නෑ වෙනුවට, මේ කොටස මට තාම පුරුදු වෙන්න ඕනේ. ... O/L වලට තව දවස් විසිහතයි. අද, වැරදුණු එක ප්‍රශ්නයක් ආයෙත් කරලා බලන්න. ... එකඟ නම් කණ්ණාඩියක් කමෙන්ට් කරන්න. මට බෑ කියලා හිතන, ඔයාගේ පන්තියේ යාළුවෙක්ට මේක share කරන්න.",
+ "scenes": [
+  {"art": "glasses", "caption": "ඔයා දාගෙන ඉන්නේ<br><b>කළු</b> කණ්ණාඩියක්ද?", "kicker": ""},
+  {"art": "note_cant", "caption": "<b>එක</b> වැරැද්දක්…", "kicker": ""},
+  {"art": "rain_cloud", "caption": "<b>අනුමානයක්</b> විතරයි", "kicker": ""},
+  {"art": "bulb", "caption": "හිතුවිල්ල ≠ <b>ඇත්ත</b>", "kicker": "Feeling Good · David Burns"},
+  {"art": "heart", "caption": "<b>සාක්ෂි</b> මොනවද?", "kicker": ""},
+  {"art": "note_yet", "caption": "<b>තාම</b> පුරුදු වෙනවා", "kicker": ""},
+  {"art": "books", "caption": "O/L: දවස් <b>27</b>", "kicker": ""},
+  {"art": "endcard", "caption": "<b>පන්තියේ යාළුවාට</b><br><b>share</b> කරන්න 🔁", "kicker": "E Positive · කණ්ණාඩියක් කමෙන්ට් කරන්න"}
+ ]
+}
