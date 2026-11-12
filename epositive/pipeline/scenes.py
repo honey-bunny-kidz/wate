@@ -188,6 +188,32 @@ ART = {
  "circles_big": f"""<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='260' r='245' fill='{SUN}' opacity='.10'/><circle cx='300' cy='260' r='235' fill='none' stroke='{CREAM}' stroke-width='6' stroke-dasharray='18 14' opacity='.7'/><circle cx='300' cy='260' r='155' fill='{SUN}'/><text x='300' y='80' font-family='Noto Sans Sinhala' font-weight='700' font-size='26' fill='{CREAM}' opacity='.75' text-anchor='middle'>ආර්ථිකය</text><text x='300' y='462' font-family='Noto Sans Sinhala' font-weight='700' font-size='26' fill='{CREAM}' opacity='.75' text-anchor='middle'>අනුන්</text><text x='300' y='200' font-family='Noto Sans Sinhala' font-weight='800' font-size='38' fill='{DEEP}' text-anchor='middle'>පාඩම</text><text x='220' y='265' font-family='Noto Sans Sinhala' font-weight='800' font-size='36' fill='{DEEP}' text-anchor='middle'>නින්ද</text><text x='380' y='265' font-family='Noto Sans Sinhala' font-weight='800' font-size='36' fill='{DEEP}' text-anchor='middle'>වචන</text><text x='300' y='330' font-family='Noto Sans Sinhala' font-weight='800' font-size='34' fill='{DEEP}' text-anchor='middle'>අලුත් දෙයක්</text></svg>""",
 }
 
+
+def _coin_stack(x, base, n, r=46):
+    """n coins stacked upward from base, centred at x (ellipse coins, amber/gold)."""
+    out = []
+    for k in range(n):
+        y = base - k * 18
+        out.append(f"<rect x='{x-r}' y='{y-14}' width='{2*r}' height='18' fill='#C98A12'/><ellipse cx='{x}' cy='{y+4}' rx='{r}' ry='14' fill='#C98A12'/><ellipse cx='{x}' cy='{y-14}' rx='{r}' ry='14' fill='#FFC857' stroke='#E09B16' stroke-width='3'/>")
+    return "".join(out)
+
+
+def _coins(stacks, glow=.14, label=""):
+    xs = [300] if len(stacks) == 1 else [120 + i * (360 / (len(stacks) - 1)) for i in range(len(stacks))]
+    body = "".join(_coin_stack(x, 450, n) for x, n in zip(xs, stacks))
+    lab = f"<text x='300' y='90' font-family='Poppins' font-weight='800' font-size='64' fill='{CREAM}' text-anchor='middle'>{label}</text>" if label else ""
+    return f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='290' r='230' fill='{SUN}' opacity='{glow}'/>{body}{lab}</svg>"
+
+
+# Compound effect / magic rupee (12 Nov): one coin -> small stacks -> huge stacks
+ART["coin_one"] = (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='270' r='220' fill='{SUN}' opacity='.15'/>"
+                   f"<circle cx='300' cy='270' r='150' fill='#E09B16'/><circle cx='300' cy='270' r='128' fill='#FFC857'/>"
+                   f"<text x='300' y='318' font-family='Poppins' font-weight='800' font-size='150' fill='#9A6408' text-anchor='middle'>1</text>"
+                   f"<text x='470' y='120' font-family='Poppins' font-weight='800' font-size='90' fill='{CREAM}' text-anchor='middle'>×2</text></svg>")
+ART["coins_10"] = _coins([1, 2, 3], .12, "")
+ART["coins_20"] = _coins([3, 5, 7, 9], .18, "")
+ART["coins_30"] = _coins([9, 13, 17, 21, 17], .30, "")
+
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>
 body{{margin:0;width:1080px;height:1920px;overflow:hidden;font-family:'Noto Sans Sinhala',sans-serif;
 background:radial-gradient(120% 70% at 50% 18%, #17707A 0%, {teal} 45%, {deep} 100%);}}

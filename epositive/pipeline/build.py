@@ -59,9 +59,17 @@ def pauses(path):
 def chunks(text):
     out_, cur = [], ""
     for sent in re.split(r"(?<=[.?!])\s+", text.strip()):
-        for w in sent.split():
-            if cur and len(cur) + 1 + len(w) > CC_MAXCH:
-                out_.append(cur); cur = w
+        ws = sent.split()
+        for j, w in enumerate(ws):
+            last_short = j == len(ws) - 1 and len(w) <= 8 and len(cur) + 1 + len(w) <= CC_MAXCH * 1.25
+            if cur and len(cur) + 1 + len(w) > CC_MAXCH and not last_short:
+                # prefer breaking after the last comma in the card so a phrase isn't split mid-way
+                # (12 Nov: "...තුනකටත් | වඩා!" showed "වඩා!" after it was spoken)
+                cw = cur.split(); k = max((i for i, x in enumerate(cw[:-1]) if x.endswith(",")), default=-1)
+                if k >= 1:
+                    out_.append(" ".join(cw[:k + 1])); cur = " ".join(cw[k + 1:] + [w])
+                else:
+                    out_.append(cur); cur = w
             else:
                 cur = f"{cur} {w}".strip()
         if cur and len(cur) > CC_MAXCH * 0.45:

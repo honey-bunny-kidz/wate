@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-12",
+ "topic": "Magic rupee: double 1 rupee every day for 30 days -> day 10 Rs 512, day 20 ~5 lakh, day 30 over 53 crore. Small daily choices compound and the payoff shows late (Darren Hardy, The Compound Effect). O/L 26 days: 5 questions a day = 130. Share with your father.",
+ "voice": "අද ඔයාට රුපියලක් දීලා, හැමදාම ඒක දෙගුණ කළොත්, දවස් තිහකින් කීයක් වෙයිද? ... දවස් දහයකින් රුපියල් පන්සිය දොළහයි. කිසිම දෙයක් නෑ වගේ. ... දවස් විස්සකින් ලක්ෂ පහක් විතර. තාමත් ලොකු නෑ නේද? ... ඒත් තිස් වෙනි දවසට, රුපියල් කෝටි පනස් තුනකටත් වඩා! මැජික් එක පේන්නේ අන්තිම දවස් ටිකේ. ... ද කොම්පවුන්ඩ් එෆෙක්ට් පොතේ ඩැරන් හාඩි කියන්නේ, හැමදාම කරන පොඩි හොඳ තේරීම්, එකතු වෙලා ලොකු ප්‍රතිඵලයක් වෙනවා කියලා. ... පාඩමුත් එහෙමයි. O/L වලට තව දවස් විසිහයයි. දවසට ප්‍රශ්න පහක් කළොත්, ප්‍රශ්න එකසිය තිහයි. ... මුල් දවස්වල වෙනසක් පේන්නේ නෑ කියලා අත්හරින්න එපා. ප්‍රතිඵලය එන්නේ පස්සේ. ... එකඟ නම් එක කියලා කමෙන්ට් කරන්න. හැමදාම ඔයා වෙනුවෙන් පොඩි දේවල් කරන, ඔයාගේ තාත්තාට මේක share කරන්න.",
+ "scenes": [
+  {"art": "coin_one", "caption": "රු. 1ක් <b>දෙගුණ</b><br>දවස් 30ක්?", "kicker": ""},
+  {"art": "coins_10", "caption": "දවස් 10: <b>රු. 512</b>", "kicker": ""},
+  {"art": "coins_20", "caption": "දවස් 20: <b>ලක්ෂ 5</b>", "kicker": ""},
+  {"art": "coins_30", "caption": "දවස් 30: <b>කෝටි 53+</b>", "kicker": ""},
+  {"art": "plant", "caption": "<b>පොඩි</b> තේරීම්, ලොකු ප්‍රතිඵල", "kicker": "The Compound Effect · Darren Hardy"},
+  {"art": "books", "caption": "දවසට <b>5</b> × 26 = <b>130</b>", "kicker": ""},
+  {"art": "steps", "caption": "<b>අත්හරින්න</b> එපා", "kicker": ""},
+  {"art": "endcard", "caption": "<b>තාත්තාට</b><br><b>share</b> කරන්න 🔁", "kicker": "E Positive · \"1\" කමෙන්ට් කරන්න"}
+ ]
+}
