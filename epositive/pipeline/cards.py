@@ -45,6 +45,11 @@ ART.update({
   <path d='M180 170 h240 v230 a40 40 0 0 1 -40 40 h-160 a40 40 0 0 1 -40 -40z' fill='{C}' opacity='.9'/>
   <g fill='{S}' stroke='#C98A1A' stroke-width='4'><ellipse cx='260' cy='400' rx='45' ry='16'/><ellipse cx='340' cy='400' rx='45' ry='16'/><ellipse cx='300' cy='378' rx='45' ry='16'/><ellipse cx='265' cy='356' rx='45' ry='16'/><ellipse cx='335' cy='340' rx='45' ry='16'/></g>
   <path d='M300 40 l10 30 l30 0 l-24 18 l9 30 l-25 -18 l-25 18 l9 -30 l-24 -18 l30 0z' fill='{S}'/></svg>""",
+ "moon": f"""<svg viewBox='0 0 600 520'><circle cx='300' cy='240' r='210' fill='{S}' opacity='.12'/>
+  <path d='M340 70 a170 170 0 1 0 150 250 a135 135 0 1 1 -150 -250z' fill='#FFE08A'/>
+  <g fill='{C}'><circle cx='130' cy='110' r='7'/><circle cx='480' cy='90' r='5'/><circle cx='520' cy='200' r='8'/><circle cx='95' cy='300' r='5'/></g>
+  <text x='450' y='170' font-family='Poppins' font-weight='800' font-size='54' fill='{C}' opacity='.9'>z</text><text x='490' y='120' font-family='Poppins' font-weight='800' font-size='40' fill='{C}' opacity='.7'>z</text>
+  <rect x='110' y='420' width='380' height='46' rx='23' fill='#2A9D8F'/><rect x='110' y='400' width='120' height='40' rx='20' fill='{C}'/></svg>""",
 })
 
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>
