@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-13",
+ "topic": "World Kindness Day (13 Nov) + monsoon rain: share your umbrella. Adam Grant, Give and Take: the 5-minute favour; helping lifts the giver too and kindness spreads. Today do one small favour. Share with your best friend who helps everyone.",
+ "voice": "වැස්සේ තෙමෙන කෙනෙක්ට, ඔයාගේ කුඩේ ටිකක් බෙදුවොත් මොකද වෙන්නේ? ... අද නොවැම්බර් දහතුන, ලෝක කරුණාව දිනය. ... ඇඩම් ග්‍රාන්ට්ගේ ගිව් ඇන්ඩ් ටේක් පොතේ කියන්නේ, ලොකු දේවල් කරන්න ඕන නෑ කියලා. විනාඩි පහකින් කරන්න පුළුවන් පොඩි උදව්වක් ඇති. ... යාළුවෙක්ට ගණිත ප්‍රශ්නයක් කියලා දෙන්න. අම්මට තේ එකක් හදලා දෙන්න. බස් එකේ සීට් එක දෙන්න. ... පුදුම දේ තමයි, උදව් ලබන කෙනාට වගේම, උදව් කරන ඔයාටත් සතුටක් දැනෙනවා. ... එක හොඳ ක්‍රියාවක් දැක්කම, තව කෙනෙක් ඒක කරනවා. පහනකින් පහනක් දැල්වෙනවා වගේ, කරුණාව පැතිරෙනවා. ... අද දවස ඉවර වෙන්න කලින්, කාට හරි එක පොඩි උදව්වක් කරන්න. ... කරනවා නම් ඔව් කියලා කමෙන්ට් කරන්න. හැමෝටම උදව් කරන, ඔයාගේ හොඳම යාළුවාට මේක share කරන්න.",
+ "scenes": [
+  {"art": "umbrella", "caption": "කුඩේ <b>බෙදුවොත්</b>?", "kicker": ""},
+  {"art": "heart", "caption": "අද <b>ලෝක කරුණාව</b><br>දිනය", "kicker": "නොවැම්බර් 13"},
+  {"art": "five", "caption": "<b>විනාඩි 5</b>ක උදව්වක්", "kicker": "Give and Take · Adam Grant"},
+  {"art": "tea", "caption": "පොඩි <b>උදව්</b>", "kicker": ""},
+  {"art": "lamps_two", "caption": "<b>දෙන්නටම</b> සතුටක්", "kicker": ""},
+  {"art": "lamps_row", "caption": "කරුණාව<br><b>පැතිරෙනවා</b>", "kicker": ""},
+  {"art": "umbrella", "caption": "අද <b>එක</b> උදව්වක්", "kicker": ""},
+  {"art": "endcard", "caption": "<b>හොඳම යාළුවාට</b><br><b>share</b> කරන්න 🔁", "kicker": "E Positive · \"ඔව්\" කමෙන්ට් කරන්න"}
+ ]
+}

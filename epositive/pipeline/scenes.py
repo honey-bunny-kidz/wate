@@ -214,6 +214,19 @@ ART["coins_10"] = _coins([1, 2, 3], .12, "")
 ART["coins_20"] = _coins([3, 5, 7, 9], .18, "")
 ART["coins_30"] = _coins([9, 13, 17, 21, 17], .30, "")
 
+# Share your umbrella (13 Nov, World Kindness Day): amber umbrella over two heads, rain around
+ART["umbrella"] = (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='270' r='230' fill='{SUN}' opacity='.14'/>"
+                   "<g stroke='#5EC4E8' stroke-width='8' stroke-linecap='round' opacity='.85'>"
+                   "<line x1='70' y1='60' x2='55' y2='105'/><line x1='140' y1='30' x2='125' y2='75'/><line x1='460' y1='35' x2='445' y2='80'/>"
+                   "<line x1='540' y1='80' x2='525' y2='125'/><line x1='50' y1='200' x2='35' y2='245'/><line x1='565' y1='220' x2='550' y2='265'/>"
+                   "<line x1='70' y1='330' x2='55' y2='375'/><line x1='555' y1='360' x2='540' y2='405'/></g>"
+                   f"<path d='M110 230 Q300 20 490 230 Q458 205 426 230 Q394 205 362 230 Q331 205 300 230 Q269 205 238 230 Q206 205 174 230 Q142 205 110 230z' fill='{SUN}'/>"
+                   "<path d='M300 70 L300 230' stroke='#E09B16' stroke-width='5'/>"
+                   "<line x1='300' y1='60' x2='300' y2='44' stroke='#3a2a20' stroke-width='8' stroke-linecap='round'/>"
+                   "<path d='M300 230 L300 420 Q300 455 268 455 Q240 455 240 428' fill='none' stroke='#3a2a20' stroke-width='12' stroke-linecap='round'/>"
+                   f"<circle cx='215' cy='300' r='42' fill='{CREAM}'/><path d='M150 470 Q150 360 215 360 Q280 360 280 470z' fill='#2A9D8F'/>"
+                   f"<circle cx='385' cy='310' r='38' fill='{CREAM}'/><path d='M325 470 Q325 368 385 368 Q445 368 445 470z' fill='#E76F51'/></svg>")
+
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>
 body{{margin:0;width:1080px;height:1920px;overflow:hidden;font-family:'Noto Sans Sinhala',sans-serif;
 background:radial-gradient(120% 70% at 50% 18%, #17707A 0%, {teal} 45%, {deep} 100%);}}
