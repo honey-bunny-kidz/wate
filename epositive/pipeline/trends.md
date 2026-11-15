@@ -11,6 +11,7 @@ Rotate these. Keep the tone hopeful and practical; no politics, no tragedy detai
 | Light over darkness, kindness | Deepavali 8 Nov; Poya days; Christmas | Lyubomirsky *How of Happiness* | 7–8 Nov, Poya, 24–25 Dec |
 | After rain comes sunshine | North-east monsoon / inter-monsoon rains Oct–Dec | Seligman *Learned Optimism* | Rainy weeks |
 | Kindness in the rain: share an umbrella, small favours (added 13 Nov) | World Kindness Day 13 Nov; heavy NE-monsoon rain weeks; kindness reels (31 Oct, 4 Nov) drew 30–54 shares | Grant *Give and Take*, Lyubomirsky *How of Happiness* | 13 Nov; Il Poya (late Nov); rainy days |
+| Money & number surprises: small daily amounts, savings challenges, 1% a day (added 15 Nov) | 12 Nov magic-rupee reel reached 13.8k people (10x any earlier post); youth money stress; month-end salary week | Hardy *The Compound Effect*, Olson *The Slight Edge*, Housel *The Psychology of Money* | Month ends, Mondays (week challenge) |
 | Small savings habit | Financial Literacy Month (Oct) | Clear *Atomic Habits* | Month ends |
 
 Formats that work on Sri Lankan Facebook: 15–35 s vertical reels, big Sinhala captions, a question in the caption to drive comments, "share to a friend who…" call to action.

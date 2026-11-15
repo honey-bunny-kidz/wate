@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-15",
+ "topic": "1% better every day: 1.01^365 = 37.8x, 0.99^365 = 0.03. Good daily choices are easy to do and easy not to do; the difference is the small choice repeated (Jeff Olson, The Slight Edge). Sequel to the 12 Nov magic-rupee winner. O/L 23 days. Share with a friend who just started a new job.",
+ "voice": "දවසට එක සීයට එකක් හොඳ වුණොත්, අවුරුද්දකින් කී ගුණයක් හොඳ වෙයිද? ... එක සීයට එකක් කියන්නේ පොඩිම පොඩි දෙයක්. අද ඒක පේන්නේවත් නෑ. ... ඒත් දවස් තුන්සිය හැට පහක්ම එහෙම කළොත්, අවුරුද්ද ඉවර වෙද්දී තිස් හත් ගුණයක්! ... හැමදාම එක සීයට එකක් පස්සට ගියොත්? බිංදුවට කිට්ටුයි. ... ද ස්ලයිට් එජ් පොතේ ජෙෆ් ඕල්සන් කියන්නේ, හොඳ පුරුද්ද කරන්නත් ලේසියි, නොකර ඉන්නත් ලේසියි කියලා. වෙනස එන්නේ ඒ පොඩි තේරීමෙන්. ... O/L වලට තව දවස් විසි තුනයි. අද එක ප්‍රශ්නයක් වැඩිපුර කරන්න. ... අද පොඩි වුණාට, එකතු වෙද්දී ලොකුයි. ... එකඟ නම් තිස් හත කියලා කමෙන්ට් කරන්න. අලුත් රස්සාවක් පටන් ගත්ත ඔයාගේ යාළුවාට මේක share කරන්න.",
+ "scenes": [
+  {"art": "pct_one", "caption": "දවසට <b>1%</b>ක්<br>අවුරුද්දකින්?", "kicker": ""},
+  {"art": "steps", "caption": "<b>1%</b> = පොඩිම පොඩි", "kicker": ""},
+  {"art": "graph_up", "caption": "දවස් 365: <b>37×</b>", "kicker": ""},
+  {"art": "graph_down", "caption": "1% පස්සට: <b>0.03</b>", "kicker": ""},
+  {"art": "plant", "caption": "කරන්නත් <b>ලේසියි</b><br>නොකර ඉන්නත්", "kicker": "The Slight Edge · Jeff Olson"},
+  {"art": "books", "caption": "O/L: දවස් <b>23</b>", "kicker": ""},
+  {"art": "trophy", "caption": "අද <b>+1</b>", "kicker": ""},
+  {"art": "endcard", "caption": "<b>යාළුවාට</b><br><b>share</b> කරන්න 🔁", "kicker": "E Positive · \"37\" කමෙන්ට් කරන්න"}
+ ]
+}

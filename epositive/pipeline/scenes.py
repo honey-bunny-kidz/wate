@@ -227,6 +227,32 @@ ART["umbrella"] = (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy=
                    f"<circle cx='215' cy='300' r='42' fill='{CREAM}'/><path d='M150 470 Q150 360 215 360 Q280 360 280 470z' fill='#2A9D8F'/>"
                    f"<circle cx='385' cy='310' r='38' fill='{CREAM}'/><path d='M325 470 Q325 368 385 368 Q445 368 445 470z' fill='#E76F51'/></svg>")
 
+# 1% better every day (15 Nov, The Slight Edge): 1.01^365 = 37.8, 0.99^365 = 0.03
+def _curve(up):
+    pts = []
+    for i in range(0, 366, 15):
+        v = (1.01 ** i) if up else (0.99 ** i)
+        y = 440 - (v / 38) * 360 if up else 440 - v * 300
+        pts.append(f"{90 + i * 1.2:.0f},{y:.0f}")
+    col = SUN if up else '#E76F51'
+    end = pts[-1].split(',')
+    lab = '37×' if up else '0.03'
+    return (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='270' r='230' fill='{SUN}' opacity='.12'/>"
+            f"<line x1='80' y1='450' x2='540' y2='450' stroke='{CREAM}' stroke-width='6' stroke-linecap='round' opacity='.7'/>"
+            f"<line x1='80' y1='450' x2='80' y2='60' stroke='{CREAM}' stroke-width='6' stroke-linecap='round' opacity='.7'/>"
+            f"<polyline points='{' '.join(pts)}' fill='none' stroke='{col}' stroke-width='14' stroke-linecap='round' stroke-linejoin='round'/>"
+            f"<circle cx='{end[0]}' cy='{end[1]}' r='18' fill='{col}'/>"
+            f"<text x='{min(int(end[0]), 470)}' y='{int(end[1]) - 34 if up else 120}' font-family='Poppins' font-weight='800' font-size='72' fill='{CREAM}' text-anchor='middle'>{lab}</text>"
+            f"<text x='310' y='500' font-family='Noto Sans Sinhala' font-weight='700' font-size='30' fill='{CREAM}' opacity='.8' text-anchor='middle'>දවස් 365</text></svg>")
+
+
+ART["pct_one"] = (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='270' r='220' fill='{SUN}' opacity='.15'/>"
+                  f"<circle cx='300' cy='270' r='160' fill='{SUN}'/>"
+                  f"<text x='300' y='322' font-family='Poppins' font-weight='800' font-size='150' fill='{DEEP}' text-anchor='middle'>1%</text>"
+                  f"<text x='490' y='120' font-family='Poppins' font-weight='800' font-size='90' fill='{CREAM}' text-anchor='middle'>?</text></svg>")
+ART["graph_up"] = _curve(True)
+ART["graph_down"] = _curve(False)
+
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>
 body{{margin:0;width:1080px;height:1920px;overflow:hidden;font-family:'Noto Sans Sinhala',sans-serif;
 background:radial-gradient(120% 70% at 50% 18%, #17707A 0%, {teal} 45%, {deep} 100%);}}

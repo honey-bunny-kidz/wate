@@ -46,3 +46,22 @@
 | 11-08 | ඔබේ කතාව Deepavali small wins | single card | n/a yet | | | |
 
 **Next week (9–15 Nov):** reels are still ~96% of reach: never skip the 8 PM reel. Winners were everyday-object metaphors (rocks jar, phone battery, mango tree): lead each reel with a familiar object + a "what if" question. Keep O/L Countdown carousel on Fri (5 weeks to go) and O/L reels for shares. Carousels/cards: keep the one-tap A/B/C reply ask (comments still ~0).
+
+| Week ending | Posts | Impressions | Reactions | Comments | Shares | Best post (format, topic) | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-15 | 4 reels, 2 carousels, 3 single cards (+FB-native echoes); 10 Nov and 14 Nov reels and 15 Nov card missed (computer/Chrome offline) | 17524 | 289 | 20 | 312 | Reel 12 Nov "රුපියල් 1ක් දවස් 30ක් දෙගුණ කළොත්?" (magic rupee, Compound Effect): 15934 impr, 13801 reach, 264 reactions, 18 comments | First breakout reel: a surprising-number question + money + step-by-step reveal (day 10/20/30). It alone was 91% of the week's impressions and brought the first real comment wave (one-tap "1" ask worked). Other reels 400–600 impr. Image posts still 17–48 impr. |
+
+### Per post, week ending 2026-11-15 (Buffer, metrics as of 14 Nov 14:21 UTC)
+| Date | Post | Format | Impr | React | Comm | Shares |
+| --- | --- | --- | --- | --- | --- | --- |
+| 11-09 | සඳුදා අභියෝගය tiny habits (Tiny Habits) | carousel | 35 | 4 | 0 | 104 |
+| 11-09 | Coconut 101st hit (Atomic Habits) | reel 49 s | 435 | 5 | 1 | 40 |
+| 11-10 | Talk to yourself like a friend (Self-Compassion) | single card | 37 | 3 | 0 | 10 |
+| 11-11 | Dark glasses: thoughts aren't facts (Feeling Good) | reel 49 s | 596 | 2 | 1 | 82 |
+| 11-12 | A minute before the phone (Power of Now) | single card | 25 | 1 | 0 | 40 |
+| 11-12 | Magic rupee x2 for 30 days (Compound Effect) | reel 53 s | 15934 | 264 | 18 | 16 |
+| 11-13 | O/L Countdown sleep (Why We Sleep) | carousel | 48 | 2 | 0 | 0 |
+| 11-13 | Share your umbrella, World Kindness Day (Give and Take) | reel 48 s | 397 | 6 | 0 | 20 |
+| 11-14 | 20 hours to a new skill (First 20 Hours) | single card | 17 | 2 | 0 | 0 |
+
+**Next week (16–22 Nov):** make the "surprising number + reveal" reel the default format (2–3 per week): a money/number question in scene 1, a step-by-step reveal in scenes 2–4, then the book idea and an O/L tie-in. Follow-ups started 15 Nov (1% a day = 37×, Slight Edge) and 16 Nov carousel (Rs 20 a week challenge, Psychology of Money). Keep the one-tap number/emoji comment ask (it produced 18 comments). Keep kindness and reframe reels for the other days. Never skip the 8 PM reel: 2 reels missed this week when the computer was off.
