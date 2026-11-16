@@ -45,6 +45,14 @@ ART.update({
   <path d='M180 170 h240 v230 a40 40 0 0 1 -40 40 h-160 a40 40 0 0 1 -40 -40z' fill='{C}' opacity='.9'/>
   <g fill='{S}' stroke='#C98A1A' stroke-width='4'><ellipse cx='260' cy='400' rx='45' ry='16'/><ellipse cx='340' cy='400' rx='45' ry='16'/><ellipse cx='300' cy='378' rx='45' ry='16'/><ellipse cx='265' cy='356' rx='45' ry='16'/><ellipse cx='335' cy='340' rx='45' ry='16'/></g>
   <path d='M300 40 l10 30 l30 0 l-24 18 l9 30 l-25 -18 l-25 18 l9 -30 l-24 -18 l30 0z' fill='{S}'/></svg>""",
+ "bed": f"""<svg viewBox='0 0 600 520'><circle cx='300' cy='250' r='220' fill='{S}' opacity='.18'/>
+  <circle cx='470' cy='110' r='55' fill='{S}'/><g stroke='{S}' stroke-width='9' stroke-linecap='round'><line x1='470' y1='30' x2='470' y2='10'/><line x1='550' y1='110' x2='572' y2='110'/><line x1='527' y1='53' x2='543' y2='37'/></g>
+  <rect x='90' y='200' width='30' height='260' rx='10' fill='#8C5A3C'/><rect x='480' y='300' width='26' height='160' rx='10' fill='#8C5A3C'/>
+  <rect x='110' y='330' width='390' height='60' rx='14' fill='#FFF7E8'/>
+  <rect x='130' y='270' width='120' height='62' rx='26' fill='#FFFFFF' stroke='#E8DCC8' stroke-width='4'/>
+  <path d='M240 300 h250 a14 14 0 0 1 14 14 v62 h-264z' fill='#2A9D8F'/><path d='M240 318 h264' stroke='#FFF7E8' stroke-width='8'/>
+  <rect x='110' y='388' width='396' height='22' rx='8' fill='#A86B47'/>
+  <circle cx='250' cy='170' r='52' fill='#3FAE6B'/><path d='M225 172 l18 18 l34 -38' fill='none' stroke='#FFFFFF' stroke-width='14' stroke-linecap='round' stroke-linejoin='round'/></svg>""",
  "moon": f"""<svg viewBox='0 0 600 520'><circle cx='300' cy='240' r='210' fill='{S}' opacity='.12'/>
   <path d='M340 70 a170 170 0 1 0 150 250 a135 135 0 1 1 -150 -250z' fill='#FFE08A'/>
   <g fill='{C}'><circle cx='130' cy='110' r='7'/><circle cx='480' cy='90' r='5'/><circle cx='520' cy='200' r='8'/><circle cx='95' cy='300' r='5'/></g>

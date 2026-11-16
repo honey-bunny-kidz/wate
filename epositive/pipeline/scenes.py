@@ -253,6 +253,31 @@ ART["pct_one"] = (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='
 ART["graph_up"] = _curve(True)
 ART["graph_down"] = _curve(False)
 
+# Fold a paper 42 times (16 Nov, Atomic Habits: results lag behind effort): 0.1 mm x 2^n
+def _paper_stack(n, label):
+    h = 12 + n * 9
+    layers = "".join(f"<rect x='{190 - k % 2 * 6}' y='{450 - (k + 1) * 9}' width='220' height='8' rx='2' fill='{CREAM if k % 2 else '#FFE7B8'}'/>" for k in range(n))
+    return (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='270' r='230' fill='{SUN}' opacity='.13'/>"
+            f"<line x1='120' y1='452' x2='480' y2='452' stroke='{CREAM}' stroke-width='6' stroke-linecap='round' opacity='.6'/>{layers}"
+            f"<text x='300' y='{max(110, 410 - n * 9)}' font-family='Poppins' font-weight='800' font-size='84' fill='{SUN}' text-anchor='middle'>{label}</text></svg>")
+
+
+ART["paper_fold"] = (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='270' r='220' fill='{SUN}' opacity='.15'/>"
+                     f"<path d='M150 140 L360 120 L380 420 L170 440z' fill='{CREAM}'/>"
+                     f"<path d='M360 120 L460 200 L470 400 L380 420z' fill='#FFE7B8'/>"
+                     f"<path d='M360 120 L380 420' stroke='#E0C79A' stroke-width='5'/>"
+                     f"<g stroke='#D9CFC0' stroke-width='5' stroke-linecap='round'><line x1='195' y1='210' x2='330' y2='198'/><line x1='200' y1='260' x2='335' y2='248'/><line x1='204' y1='310' x2='338' y2='298'/></g>"
+                     f"<text x='500' y='120' font-family='Poppins' font-weight='800' font-size='96' fill='{SUN}' text-anchor='middle'>42?</text></svg>")
+ART["paper_x2"] = _paper_stack(2, "×2")
+ART["paper_10"] = _paper_stack(8, "10 cm")
+ART["paper_30"] = _paper_stack(26, "100 km")
+ART["moon_reach"] = (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='270' r='235' fill='{SUN}' opacity='.10'/>"
+                     f"<g fill='{CREAM}'><circle cx='80' cy='90' r='5'/><circle cx='540' cy='300' r='6'/><circle cx='120' cy='300' r='4'/><circle cx='500' cy='470' r='5'/></g>"
+                     f"<circle cx='420' cy='130' r='90' fill='#FFF3D6'/><circle cx='390' cy='110' r='16' fill='#E9DDBE'/><circle cx='445' cy='165' r='12' fill='#E9DDBE'/><circle cx='455' cy='100' r='9' fill='#E9DDBE'/>"
+                     f"<circle cx='160' cy='420' r='70' fill='#2A9D8F'/><path d='M120 395 q25 -25 50 -5 q20 20 45 5 q-5 40 -40 50 q-35 0 -55 -50z' fill='#7BC67E'/>"
+                     f"<line x1='205' y1='370' x2='355' y2='195' stroke='{SUN}' stroke-width='10' stroke-dasharray='20 16' stroke-linecap='round'/>"
+                     f"<text x='415' y='430' font-family='Poppins' font-weight='800' font-size='48' fill='{SUN}' text-anchor='middle'>4,40,000 km</text></svg>")
+
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>
 body{{margin:0;width:1080px;height:1920px;overflow:hidden;font-family:'Noto Sans Sinhala',sans-serif;
 background:radial-gradient(120% 70% at 50% 18%, #17707A 0%, {teal} 45%, {deep} 100%);}}

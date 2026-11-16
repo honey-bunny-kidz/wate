@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-16",
+ "topic": "Fold a 0.1 mm paper 42 times: 10 folds = 10 cm, 30 folds = 100 km, 42 folds = past the Moon (0.1 mm x 2^42 = 440,000 km). Results of habits lag behind effort; the early folds look like nothing (James Clear, Atomic Habits, plateau of latent potential). Surprising-number + step reveal format (12 Nov winner). O/L 22 days. Share with a mum of an O/L child.",
+ "voice": "කඩදාසියක් හතළිස් දෙපාරක් නැමුවොත්, ඒක කොච්චර උස වෙයිද? ... කඩදාසියක ඝනකම මිලිමීටර් එකකින් දහයෙන් පංගුවයි. නමන හැම පාරම, ඝනකම දෙගුණ වෙනවා. ... දහ පාරක් නැමුවම, සෙන්ටිමීටර් දහයයි. පොතක් තරම්වත් නෑ. ... ඒත් තිස් පාරක් නැමුවොත්, කිලෝමීටර් සීයකටත් වැඩියි! ... හතළිස් දෙපාරක් නැමුවොත්, හඳටත් එහාට යනවා! ... ඇටමික් හැබිට්ස් පොතේ ජේම්ස් ක්ලියර් කියන්නේ, පුරුද්දක ප්‍රතිඵල පේන්නේ පරක්කු වෙලා කියලා. මුල් නැමීම් වල වෙනසක් පේන්නේ නෑ. ... O/L වලට තව දවස් විසි දෙකයි. අද කරන එක පාඩමක්, එක නැමීමක් වගේ. ... එකඟ නම් හතළිස් දෙක කියලා කමෙන්ට් කරන්න. O/L ලියන දරුවෙක් ඉන්න අම්මා කෙනෙක්ට මේක share කරන්න.",
+ "scenes": [
+  {"art": "paper_fold", "caption": "<b>42</b> පාරක්<br>නැමුවොත්?", "kicker": ""},
+  {"art": "paper_x2", "caption": "හැම පාරම <b>×2</b>", "kicker": ""},
+  {"art": "paper_10", "caption": "10 පාරට: <b>10 cm</b>", "kicker": ""},
+  {"art": "paper_30", "caption": "30 පාරට: <b>100 km</b>", "kicker": ""},
+  {"art": "moon_reach", "caption": "42 පාරට: <b>හඳට!</b>", "kicker": ""},
+  {"art": "plant", "caption": "මුලින් <b>නොපෙනෙයි</b>", "kicker": "Atomic Habits · James Clear"},
+  {"art": "books", "caption": "O/L: දවස් <b>22</b>", "kicker": ""},
+  {"art": "endcard", "caption": "<b>අම්මා</b> කෙනෙක්ට<br><b>share</b> කරන්න 🔁", "kicker": "E Positive · \"42\" කමෙන්ට් කරන්න"}
+ ]
+}
