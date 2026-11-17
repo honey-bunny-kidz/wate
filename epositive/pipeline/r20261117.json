@@ -1,0 +1,14 @@
+{
+ "date": "2026-11-17",
+ "topic": "Of 10 tasks, only 2 really matter: they bring ~80% of the results (80/20). Brian Tracy, Eat That Frog: the biggest, hardest task is your frog - eat it first thing in the morning, before the phone. O/L in 21 days: do the 2 hardest lessons first every day. Surprising-number + step reveal format. Share with a friend who leaves everything to the last minute.",
+ "voice": "ඔයාට අද කරන්න වැඩ දහයක් තියෙනවා නම්, ඇත්තටම වැදගත් කීයද? ... උත්තරේ, දෙකයි! දහයෙන් දෙකයි. ... ඒ වැඩ දෙකෙන් තමයි, ප්‍රතිඵලවලින් සීයට අසූවක්ම එන්නේ. ඉතුරු අටම පොඩි දේවල්. ... ඊට් දැට් ෆ්‍රොග් පොතේ බ්‍රයන් ට්‍රේසි, මේ ලොකුම වැඩේට කියන්නේ ගෙම්බා කියලා. ගෙම්බෙක් කන්න වුණොත්, ඉක්මනටම කාලා දාන්න. ... ඉතින් උදේම, ෆෝන් එක බලන්න කලින්, අමාරුම වැඩේ මුලින්ම කරන්න. එතකොට මුළු දවසම සැහැල්ලුයි. ... O/L වලට තව දවස් විසි එකයි. හැමදාම අමාරුම පාඩම් දෙක, මුලින්ම කරන්න. ... එකඟ නම් දෙක කියලා කමෙන්ට් කරන්න. හැමදේම අන්තිම මොහොතට කල් දාන යාළුවෙක්ට, මේක share කරන්න.",
+ "scenes": [
+  {"art": "tasks_q", "caption": "වැඩ 10න්<br><b>කීයද</b> වැදගත්?", "kicker": ""},
+  {"art": "tasks_2", "caption": "<b>2</b>යි!", "kicker": ""},
+  {"art": "pct_80", "caption": "2 වැඩ = <b>80%</b>", "kicker": ""},
+  {"art": "frog", "caption": "ලොකුම වැඩේ = <b>ගෙම්බා</b>", "kicker": "Eat That Frog! · Brian Tracy"},
+  {"art": "alarm", "caption": "උදේම <b>මුලින්ම</b>", "kicker": ""},
+  {"art": "books", "caption": "O/L: දවස් <b>21</b>", "kicker": ""},
+  {"art": "endcard", "caption": "<b>කල් දාන</b> යාළුවාට<br><b>share</b> කරන්න 🔁", "kicker": "E Positive · \"2\" කමෙන්ට් කරන්න"}
+ ]
+}

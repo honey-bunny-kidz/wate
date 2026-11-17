@@ -278,6 +278,27 @@ ART["moon_reach"] = (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' c
                      f"<line x1='205' y1='370' x2='355' y2='195' stroke='{SUN}' stroke-width='10' stroke-dasharray='20 16' stroke-linecap='round'/>"
                      f"<text x='415' y='430' font-family='Poppins' font-weight='800' font-size='48' fill='{SUN}' text-anchor='middle'>4,40,000 km</text></svg>")
 
+# 80/20 + Eat That Frog (17 Nov): 10 task cards, the 2 that matter glow amber, then the 80% bar
+def _tasks(hi, mark=""):
+    out = []
+    for k in range(10):
+        x, y = 70 + (k % 5) * 96, 150 + (k // 5) * 150
+        on = k in hi
+        out.append(f"<rect x='{x}' y='{y}' width='80' height='120' rx='12' fill='{SUN if on else CREAM}' opacity='{1 if on or not hi else .35}'/>"
+                   f"<rect x='{x+14}' y='{y+18}' width='22' height='22' rx='5' fill='none' stroke='{DEEP}' stroke-width='4' opacity='.6'/>"
+                   f"<g stroke='{DEEP}' stroke-width='5' stroke-linecap='round' opacity='.35'><line x1='{x+14}' y1='{y+62}' x2='{x+66}' y2='{y+62}'/><line x1='{x+14}' y1='{y+84}' x2='{x+54}' y2='{y+84}'/></g>")
+    m = f"<text x='300' y='110' font-family='Poppins' font-weight='800' font-size='80' fill='{SUN}' text-anchor='middle'>{mark}</text>" if mark else ""
+    return f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='290' r='230' fill='{SUN}' opacity='.12'/>{''.join(out)}{m}</svg>"
+
+
+ART["tasks_q"] = _tasks([], "10 ?")
+ART["tasks_2"] = _tasks([1, 7], "2")
+ART["pct_80"] = (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='270' r='230' fill='{SUN}' opacity='.12'/>"
+                 f"<text x='70' y='190' font-family='Poppins' font-weight='800' font-size='54' fill='{SUN}'>2</text>"
+                 f"<rect x='130' y='140' width='400' height='70' rx='14' fill='{SUN}'/><text x='510' y='192' font-family='Poppins' font-weight='800' font-size='50' fill='{DEEP}' text-anchor='end'>80%</text>"
+                 f"<text x='70' y='350' font-family='Poppins' font-weight='800' font-size='54' fill='{CREAM}' opacity='.7'>8</text>"
+                 f"<rect x='130' y='300' width='100' height='70' rx='14' fill='{CREAM}' opacity='.55'/><text x='245' y='352' font-family='Poppins' font-weight='800' font-size='50' fill='{CREAM}' opacity='.8'>20%</text></svg>")
+
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>
 body{{margin:0;width:1080px;height:1920px;overflow:hidden;font-family:'Noto Sans Sinhala',sans-serif;
 background:radial-gradient(120% 70% at 50% 18%, #17707A 0%, {teal} 45%, {deep} 100%);}}

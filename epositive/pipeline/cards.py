@@ -58,6 +58,13 @@ ART.update({
   <g fill='{C}'><circle cx='130' cy='110' r='7'/><circle cx='480' cy='90' r='5'/><circle cx='520' cy='200' r='8'/><circle cx='95' cy='300' r='5'/></g>
   <text x='450' y='170' font-family='Poppins' font-weight='800' font-size='54' fill='{C}' opacity='.9'>z</text><text x='490' y='120' font-family='Poppins' font-weight='800' font-size='40' fill='{C}' opacity='.7'>z</text>
   <rect x='110' y='420' width='380' height='46' rx='23' fill='#2A9D8F'/><rect x='110' y='400' width='120' height='40' rx='20' fill='{C}'/></svg>""",
+ "habit_loop": f"""<svg viewBox='0 0 600 520'><circle cx='300' cy='260' r='230' fill='{S}' opacity='.14'/>
+  <circle cx='300' cy='260' r='150' fill='none' stroke='{C}' stroke-width='14' stroke-dasharray='190 46' opacity='.85'/>
+  <circle cx='300' cy='110' r='62' fill='{S}'/><circle cx='430' cy='335' r='62' fill='#2A9D8F'/><circle cx='170' cy='335' r='62' fill='#E76F51'/>
+  <text x='300' y='126' font-family='Poppins' font-weight='800' font-size='46' fill='#0A3B3F' text-anchor='middle'>1</text>
+  <text x='430' y='351' font-family='Poppins' font-weight='800' font-size='46' fill='{C}' text-anchor='middle'>2</text>
+  <text x='170' y='351' font-family='Poppins' font-weight='800' font-size='46' fill='{C}' text-anchor='middle'>3</text>
+  <text x='300' y='275' font-family='Noto Sans Sinhala' font-weight='800' font-size='40' fill='{C}' text-anchor='middle'>පුරුද්ද</text></svg>""",
 })
 
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>
