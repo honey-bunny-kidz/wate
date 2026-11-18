@@ -299,6 +299,51 @@ ART["pct_80"] = (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='2
                  f"<text x='70' y='350' font-family='Poppins' font-weight='800' font-size='54' fill='{CREAM}' opacity='.7'>8</text>"
                  f"<rect x='130' y='300' width='100' height='70' rx='14' fill='{CREAM}' opacity='.55'/><text x='245' y='352' font-family='Poppins' font-weight='800' font-size='50' fill='{CREAM}' opacity='.8'>20%</text></svg>")
 
+# Chinese bamboo story (18 Nov, Atomic Habits "plateau of latent potential"): 4 years of nothing above ground,
+# roots growing below, then a huge shoot in weeks
+def _bamboo(stage, label=""):
+    soil = (f"<rect x='60' y='330' width='480' height='170' rx='20' fill='#7A4A2A'/>"
+            f"<rect x='60' y='322' width='480' height='22' rx='10' fill='#5E9E4A'/>")
+    roots = ""
+    if stage in ("roots", "tall"):
+        roots = ("<g stroke='#E9C46A' stroke-width='7' fill='none' stroke-linecap='round'>"
+                 "<path d='M300 340 C300 390 250 410 180 450'/><path d='M300 340 C305 400 360 420 430 470'/>"
+                 "<path d='M300 345 C290 420 300 450 300 490'/><path d='M260 400 C220 400 160 390 110 410'/>"
+                 "<path d='M345 395 C390 385 450 380 500 400'/><path d='M230 430 C200 460 150 470 120 480'/>"
+                 "<path d='M370 440 C400 470 450 480 480 488'/></g>")
+    above = ""
+    if stage == "seed":
+        above = (f"<ellipse cx='300' cy='318' rx='26' ry='10' fill='#5E3B22'/>"
+                 f"<g transform='translate(390 150) rotate(20)'><rect x='0' y='40' width='110' height='70' rx='14' fill='#2A9D8F'/>"
+                 f"<path d='M110 55 l60 -30' stroke='#2A9D8F' stroke-width='14' stroke-linecap='round'/>"
+                 f"<path d='M20 40 q35 -40 70 0' stroke='#2A9D8F' stroke-width='10' fill='none'/></g>"
+                 f"<g fill='#8ECAE6'><circle cx='560' cy='170' r='7'/><circle cx='545' cy='205' r='6'/><circle cx='570' cy='235' r='6'/></g>")
+    if stage == "tall":
+        segs = "".join(f"<rect x='284' y='{318 - (k + 1) * 46}' width='32' height='44' rx='6' fill='#3FAE6B'/>" for k in range(6))
+        leaves = ("<g fill='#7BC67E'><path d='M300 60 C250 40 210 50 190 80 C240 85 275 80 300 60z'/>"
+                  "<path d='M300 110 C350 90 395 100 415 130 C365 135 330 130 300 110z'/>"
+                  "<path d='M300 170 C250 150 210 160 190 190 C240 195 275 190 300 170z'/></g>")
+        above = segs + leaves
+    lx, ly = (300, 150) if len(label) > 5 else (130, 280)
+    lab = (f"<text x='{lx}' y='{ly}' font-family='Poppins' font-weight='800' font-size='72' fill='{SUN}' text-anchor='middle'>{label}</text>"
+           if label else "")
+    return f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='260' r='235' fill='{SUN}' opacity='.12'/>{soil}{roots}{above}{lab}</svg>"
+
+
+ART["bamboo_seed"] = _bamboo("seed")
+ART["bamboo_years"] = _bamboo("empty", "1·2·3·4")
+ART["bamboo_tall"] = _bamboo("tall", "80 ft")
+ART["bamboo_roots"] = _bamboo("roots")
+# effort vs results: results stay flat, then jump (the line under the curve = effort, steady)
+ART["plateau"] = (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='270' r='230' fill='{SUN}' opacity='.12'/>"
+                  f"<line x1='80' y1='450' x2='540' y2='450' stroke='{CREAM}' stroke-width='6' stroke-linecap='round' opacity='.7'/>"
+                  f"<line x1='80' y1='450' x2='80' y2='60' stroke='{CREAM}' stroke-width='6' stroke-linecap='round' opacity='.7'/>"
+                  f"<line x1='90' y1='420' x2='520' y2='200' stroke='{CREAM}' stroke-width='8' stroke-dasharray='18 14' stroke-linecap='round' opacity='.75'/>"
+                  f"<path d='M90 430 C250 428 360 425 420 395 C470 360 500 250 520 100' fill='none' stroke='{SUN}' stroke-width='14' stroke-linecap='round'/>"
+                  f"<circle cx='520' cy='100' r='18' fill='{SUN}'/>"
+                  f"<text x='240' y='300' font-family='Noto Sans Sinhala' font-weight='700' font-size='34' fill='{CREAM}' text-anchor='middle'>මහන්සිය</text>"
+                  f"<text x='400' y='130' font-family='Noto Sans Sinhala' font-weight='800' font-size='38' fill='{SUN}' text-anchor='middle'>ප්‍රතිඵල</text></svg>")
+
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>
 body{{margin:0;width:1080px;height:1920px;overflow:hidden;font-family:'Noto Sans Sinhala',sans-serif;
 background:radial-gradient(120% 70% at 50% 18%, #17707A 0%, {teal} 45%, {deep} 100%);}}
