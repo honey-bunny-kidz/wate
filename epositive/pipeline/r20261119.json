@@ -1,0 +1,14 @@
+{
+ "date": "2026-11-19",
+ "topic": "Three good things (Martin Seligman, Flourish): every night for a week, write 3 things that went well today and one line on why. In Seligman's study people who did it for one week were happier and less down for six months. Small things count (mum's tea, a friend's smile, one finished lesson). O/L in 19 days: write 3 things you learned today. Share with your best friend who always thinks about problems.",
+ "voice": "සතියක් විතරක් කරපු පොඩි වැඩක්, මාස හයක්ම සතුට දුන්නොත්? ... වැඩේ හරිම සරලයි. හැමදාම රෑ නිදාගන්න කලින්, අද හොඳට ගිය දේවල් තුනක් ලියන්න. ... ලොකු දේවල් ඕනේ නෑ. අම්මා හදපු තේ එක. යාළුවෙක්ගේ හිනාව. ඉවර කරපු එක පාඩමක්. ... ඊට පස්සේ, ඒක හොඳට ගියේ ඇයි කියලා, එක පේළියක් ලියන්න. ... ෆ්ලරිෂ් පොතේ මාටින් සෙලිග්මන් කියන විදියට, මේක සතියක් කරපු අය, මාස හයකට පස්සෙත් වඩා සතුටින් හිටියා. මොළය හොඳ දේ හොයන්න පුරුදු වෙනවා. ... O/L වලට තව දවස් දහනවයයි. අද ඉගෙනගත්ත දේවල් තුනක් ලියන්න. හිතට හයියක් එනවා. ... අද රෑ ලියනවා නම් තුන කියලා කමෙන්ට් කරන්න. හැමදාම ප්‍රශ්න ගැනම හිතන ඔයාගේ හොඳම යාළුවාට, මේක share කරන්න.",
+ "scenes": [
+  {"art": "months_q", "caption": "සතියයි.<br><b>මාස 6ක් සතුට?</b>", "kicker": ""},
+  {"art": "notebook_3", "caption": "රෑට <b>හොඳ දේ 3ක්</b>", "kicker": ""},
+  {"art": "tea", "caption": "පොඩි දේවල් <b>ඇති</b>", "kicker": ""},
+  {"art": "bulb", "caption": "<b>ඇයි?</b> කියලත් ලියන්න", "kicker": ""},
+  {"art": "months_6", "caption": "මාස 6ක් <b>සතුටින්</b>", "kicker": "Flourish · Martin Seligman"},
+  {"art": "books", "caption": "O/L: දවස් <b>19</b>", "kicker": ""},
+  {"art": "endcard", "caption": "හොඳම <b>යාළුවාට</b><br><b>share</b> කරන්න 🔁", "kicker": "E Positive · \"3\" කමෙන්ට් කරන්න"}
+ ]
+}

@@ -356,6 +356,42 @@ background:radial-gradient(120% 70% at 50% 18%, #17707A 0%, {teal} 45%, {deep} 1
 </style></head><body><div class='top'>E POSITIVE</div><div class='kick'>{kick}</div><div class='art'>{art}</div><div class='cap'>{cap}</div></body></html>"""
 
 
+# Three good things (19 Nov, Seligman Flourish): notebook with 3 ticked lines, 7-day week, 6 months of sunny pages
+def _notebook(n):
+    rows = []
+    for k in range(3):
+        y = 190 + k * 90
+        on = k < n
+        rows.append(f"<circle cx='205' cy='{y}' r='22' fill='{SUN if on else 'none'}' stroke='{DEEP}' stroke-width='5' opacity='{1 if on else .4}'/>"
+                    + (f"<path d='M194 {y} l8 9 l15 -17' fill='none' stroke='{DEEP}' stroke-width='6' stroke-linecap='round'/>" if on else "")
+                    + f"<line x1='245' y1='{y}' x2='{420 - k*30}' y2='{y}' stroke='{DEEP}' stroke-width='9' stroke-linecap='round' opacity='.45'/>")
+    return (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='270' r='230' fill='{SUN}' opacity='.13'/>"
+            f"<rect x='150' y='90' width='310' height='380' rx='22' fill='{CREAM}'/>"
+            f"<g fill='{TEAL}'>" + "".join(f"<circle cx='150' cy='{130 + j*50}' r='9'/>" for j in range(7)) + "</g>"
+            f"<text x='305' y='140' font-family='Poppins' font-weight='800' font-size='38' fill='{TEAL}' text-anchor='middle'>1 · 2 · 3</text>"
+            + "".join(rows) +
+            f"<path d='M470 90 l14 30 l32 4 l-24 22 l7 32 l-29 -16 l-29 16 l7 -32 l-24 -22 l32 -4z' fill='{SUN}'/></svg>")
+
+
+def _months(label):
+    pages = []
+    for k in range(6):
+        x = 75 + k * 78
+        h = 90 + k * 34
+        y = 420 - h
+        pages.append(f"<rect x='{x}' y='{y}' width='62' height='{h}' rx='10' fill='{SUN}' opacity='{.45 + k*.11:.2f}'/>"
+                     f"<circle cx='{x+31}' cy='{y+30}' r='14' fill='{DEEP}' opacity='.55'/>"
+                     f"<path d='M{x+22} {y+30} q9 9 18 0' fill='none' stroke='{SUN}' stroke-width='3'/>")
+    m = f"<text x='300' y='120' font-family='Poppins' font-weight='800' font-size='84' fill='{SUN}' text-anchor='middle'>{label}</text>" if label else ""
+    return (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='290' r='230' fill='{SUN}' opacity='.12'/>"
+            + "".join(pages) + f"<line x1='60' y1='432' x2='540' y2='432' stroke='{CREAM}' stroke-width='6' stroke-linecap='round' opacity='.6'/>{m}</svg>")
+
+
+ART["notebook_3"] = _notebook(3)
+ART["months_q"] = _months("?")
+ART["months_6"] = _months("6")
+
+
 def main(script, outdir):
     os.makedirs(outdir, exist_ok=True)
     data = json.load(open(script))

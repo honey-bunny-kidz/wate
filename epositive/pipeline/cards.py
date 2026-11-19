@@ -65,6 +65,12 @@ ART.update({
   <text x='430' y='351' font-family='Poppins' font-weight='800' font-size='46' fill='{C}' text-anchor='middle'>2</text>
   <text x='170' y='351' font-family='Poppins' font-weight='800' font-size='46' fill='{C}' text-anchor='middle'>3</text>
   <text x='300' y='275' font-family='Noto Sans Sinhala' font-weight='800' font-size='40' fill='{C}' text-anchor='middle'>පුරුද්ද</text></svg>""",
+ "timer": f"""<svg viewBox='0 0 600 520'><circle cx='300' cy='270' r='230' fill='{S}' opacity='.15'/>
+  <rect x='270' y='40' width='60' height='34' rx='8' fill='#E76F51'/><rect x='290' y='70' width='20' height='30' fill='#E76F51'/>
+  <circle cx='300' cy='285' r='180' fill='{C}'/><circle cx='300' cy='285' r='180' fill='none' stroke='#E76F51' stroke-width='18'/>
+  <path d='M300 285 L300 123 A162 162 0 0 1 440 366 Z' fill='{S}' opacity='.85'/>
+  <text x='300' y='330' font-family='Poppins' font-weight='800' font-size='120' fill='#0A3B3F' text-anchor='middle'>25</text>
+  <text x='478' y='120' font-family='Poppins' font-weight='800' font-size='56' fill='#2A9D8F'>+5</text></svg>""",
 })
 
 PAGE = """<!doctype html><html><head><meta charset='utf-8'><style>
