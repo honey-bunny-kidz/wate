@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-20",
+ "topic": "Four Thousand Weeks (Oliver Burkeman): an 80-year life is only about 4000 weeks. If you scroll 4 hours a day from age 15, that adds up to more than 10 years (~560 weeks). We can't do everything, so choose what matters most first. Take back one hour today. O/L in 18 days = less than 3 weeks. Share with your younger brother or sister who is always on the phone.",
+ "voice": "ඔයාගේ ජීවිතේ සති කීයක් තියෙනවද, දන්නවද? ... අවුරුදු අසූවක් ජීවත් වුණොත්, සති හාරදාහක් විතරයි. ... දැන් හිතන්න, දවසකට පැය හතරක් ෆෝන් එකේ scroll කරනවා කියලා. ... අවුරුදු පහළොවේ ඉඳන් එකතු කළොත්, ඒක අවුරුදු දහයකටත් වඩා වැඩියි! ... ෆෝර් තවුසන්ඩ් වීක්ස් පොතේ ඔලිවර් බර්ක්මන් කියන විදියට, අපිට හැමදේම කරන්න කාලය නෑ. ඒ නිසා, වැදගත්ම දේ මුලින්ම තෝරගන්න. ... අද ෆෝන් එකෙන් පැය එකක් ආපහු ගන්න. අම්මා එක්ක කතා කරන්න, පොතක් කියවන්න, නැත්නම් ඇවිදින්න. ... O/L වලට තව දවස් දහඅටයි. ඒ කියන්නේ සති තුනකටත් අඩුයි. හැම පැයක්ම වටිනවා. ... අද පැය එකක් ආපහු ගන්නවා නම්, එක කියලා කමෙන්ට් කරන්න. ෆෝන් එකේම ඉන්න ඔයාගේ මල්ලිට හරි නංගිට හරි, මේක share කරන්න.",
+ "scenes": [
+  {"art": "weeks_q", "caption": "ජීවිතේ සති<br><b>කීයද?</b>", "kicker": ""},
+  {"art": "weeks_4000", "caption": "සති <b>4000</b>යි!", "kicker": ""},
+  {"art": "phone_4h", "caption": "දවසට <b>පැය 4ක්</b> ෆෝන්", "kicker": ""},
+  {"art": "weeks_phone", "caption": "අවුරුදු <b>10+</b>!", "kicker": ""},
+  {"art": "rocks_jar", "caption": "<b>වැදගත්ම දේ</b> මුලින්", "kicker": "Four Thousand Weeks · Oliver Burkeman"},
+  {"art": "phone_off", "caption": "අද <b>පැය 1ක්</b> ආපහු", "kicker": ""},
+  {"art": "books", "caption": "O/L: සති <b>3</b>ටත් අඩුයි", "kicker": ""},
+  {"art": "endcard", "caption": "මල්ලිට, නංගිට<br><b>share</b> කරන්න 🔁", "kicker": "E Positive · \"1\" කමෙන්ට් කරන්න"}
+ ]
+}

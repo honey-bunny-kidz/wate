@@ -56,3 +56,4 @@ Every day: one Sinhala text post at **7:30 AM** and one Sinhala reel at **8:00 P
 ## Setup in a fresh session
 - Fonts: `git clone --depth 1 --filter=blob:none --sparse https://github.com/google/fonts gfonts && cd gfonts && git sparse-checkout set ofl/notosanssinhala && mkdir -p ~/.fonts && cp ofl/notosanssinhala/*.ttf ~/.fonts/ && fc-cache -f`
 - Playwright + Chromium + ffmpeg are preinstalled.
+- 20 Nov: art `weeks_q` / `weeks_4000` / `weeks_phone` (4000-week life grid, last ~560 weeks amber = 4 h/day of phone from age 15) and `phone_4h` in scenes.py (Four Thousand Weeks). Claude-in-Chrome worked; Download saved `Generated Audio <date> - <time>.wav`. Voice 465 letters → 49.0 s. Aligning from both ends worked: the 1.0 s pauses were scene breaks 2→3 and 4→5; scenes 3/4 split on a 0.4 s pause. The `hourglass` art carries a "20" badge: use `rocks_jar` for "important things first".

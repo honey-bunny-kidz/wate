@@ -392,6 +392,31 @@ ART["months_q"] = _months("?")
 ART["months_6"] = _months("6")
 
 
+def _weeks(n_hi, label, faded=False):
+    """4000 weeks of an 80-year life as an 80 x 50 grid of tiny squares; the last n_hi are amber (Four Thousand Weeks)."""
+    lo, hi = [], []
+    for k in range(4000):
+        x, y = 20 + (k % 80) * 7, 150 + (k // 80) * 7
+        (hi if k >= 4000 - n_hi else lo).append(f"M{x} {y}h6v6h-6z")
+    m = f"<text x='300' y='120' font-family='Poppins' font-weight='800' font-size='84' fill='{SUN}' text-anchor='middle'>{label}</text>" if label else ""
+    return (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='300' r='230' fill='{SUN}' opacity='.12'/>"
+            f"<path d='{''.join(lo)}' fill='{CREAM}' opacity='{.35 if faded else .85}'/>"
+            + (f"<path d='{''.join(hi)}' fill='{SUN}'/>" if hi else "") + m + "</svg>")
+
+
+ART["weeks_q"] = _weeks(0, "?", faded=True)
+ART["weeks_4000"] = _weeks(0, "4000")
+ART["weeks_phone"] = _weeks(560, "≈ 560")
+ART["phone_4h"] = (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='280' r='230' fill='{SUN}' opacity='.13'/>"
+                   f"<rect x='200' y='70' width='200' height='390' rx='30' fill='{DEEP}' stroke='{CREAM}' stroke-width='8'/>"
+                   f"<rect x='222' y='110' width='156' height='300' rx='10' fill='{TEAL}'/>"
+                   f"<circle cx='300' cy='230' r='62' fill='{CREAM}'/><line x1='300' y1='230' x2='300' y2='185' stroke='{DEEP}' stroke-width='7' stroke-linecap='round'/>"
+                   f"<line x1='300' y1='230' x2='335' y2='250' stroke='{DEEP}' stroke-width='7' stroke-linecap='round'/>"
+                   f"<path d='M300 230 L300 168 A62 62 0 0 1 353.7 261 Z' fill='{SUN}' opacity='.55'/>"
+                   f"<text x='300' y='365' font-family='Poppins' font-weight='800' font-size='64' fill='{SUN}' text-anchor='middle'>4h</text>"
+                   f"<g stroke='{CREAM}' stroke-width='6' stroke-linecap='round' opacity='.8'><path d='M440 160 q20 30 0 60'/><path d='M470 140 q34 50 0 100'/></g></svg>")
+
+
 def main(script, outdir):
     os.makedirs(outdir, exist_ok=True)
     data = json.load(open(script))
