@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-21",
+ "topic": "Kindness ripple: help 3 people, each helps 3 more. Round 10 = 59,049 people; round 16 = 43 million, more than all of Sri Lanka. The How of Happiness (Sonja Lyubomirsky): small kind acts make the giver happier too. Il Poya is near; give water, a smile, carry someone's bag; give an O/L friend your notes. Comment 3, share with your grandmother or grandfather who helps everyone.",
+ "voice": "ඔයා අද කෙනෙක්ට උදව් කළොත්, ඒක කී දෙනෙක් ළඟට යයිද? ... ඔයා තුන් දෙනෙක්ට උදව් කරනවා. ඒ හැමෝම, තව තුන් දෙනා ගානේ උදව් කරනවා. ... තුන, නවය, විසිහත. දහවෙනි වටයේදී, පනස් නව දාහකට වඩා! ... දාසයවෙනි වටයේදී, මුළු ලංකාවේම ජනගහනයටත් වඩා වැඩියි! ... ද හව් ඔෆ් හැපිනස් පොතේ සොන්යා ලියුබොමර්ස්කි කියන විදියට, පොඩි කරුණාවක් කරන කෙනාගේ සතුටත් වැඩි වෙනවා. ... ඉල් පෝය ළඟයි. වතුර බෝතලයක් දෙන්න, හිනාවක් දෙන්න, නැත්නම් කෙනෙක්ගේ බඩු උස්සලා දෙන්න. ... O/L ලියන යාළුවෙක්ට ඔයාගේ නෝට්ස් ටිකක් දෙන එකත්, ලොකු කරුණාවක්. ... අද තුන් දෙනෙක්ට උදව් කරනවා නම්, තුන කියලා කමෙන්ට් කරන්න. හැමෝටම උදව් කරන ඔයාගේ ආච්චිට හරි සීයාට හරි, මේක share කරන්න.",
+ "scenes": [
+  {"art": "ripple_1", "caption": "එක උදව්වක්<br><b>කී දෙනෙක්ට?</b>", "kicker": ""},
+  {"art": "ripple_3", "caption": "<b>3</b> දෙනෙක්ට උදව්", "kicker": ""},
+  {"art": "ripple_9", "caption": "10 වටය: <b>59,049</b>", "kicker": ""},
+  {"art": "ripple_16", "caption": "<b>මුළු ලංකාවටම</b> වඩා!", "kicker": ""},
+  {"art": "heart", "caption": "දෙන කෙනාගේ <b>සතුටත්</b>", "kicker": "The How of Happiness · Sonja Lyubomirsky"},
+  {"art": "lamps_row", "caption": "ඉල් පෝයට <b>පොඩි උදව්වක්</b>", "kicker": ""},
+  {"art": "books", "caption": "O/L යාළුවෙක්ට <b>notes</b>", "kicker": ""},
+  {"art": "endcard", "caption": "ආච්චිට, සීයාට<br><b>share</b> කරන්න 🔁", "kicker": "E Positive · \"3\" කමෙන්ට් කරන්න"}
+ ]
+}

@@ -417,6 +417,35 @@ ART["phone_4h"] = (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy=
                    f"<g stroke='{CREAM}' stroke-width='6' stroke-linecap='round' opacity='.8'><path d='M440 160 q20 30 0 60'/><path d='M470 140 q34 50 0 100'/></g></svg>")
 
 
+# Kindness ripple (21 Nov, The How of Happiness): you help 3, each helps 3 more -> 3, 9, 27 ... round 16 > all of Sri Lanka
+def _person(x, y, s, col):
+    return (f"<circle cx='{x:.1f}' cy='{y-s*0.9:.1f}' r='{s*0.42:.1f}' fill='{col}'/>"
+            f"<path d='M{x-s*0.62:.1f} {y+s*0.55:.1f} Q{x-s*0.62:.1f} {y-s*0.32:.1f} {x:.1f} {y-s*0.32:.1f} Q{x+s*0.62:.1f} {y-s*0.32:.1f} {x+s*0.62:.1f} {y+s*0.55:.1f}z' fill='{col}'/>")
+
+
+def _ripple(levels, label=""):
+    import math
+    cx, cy = 300, 300
+    out = [f"<circle cx='{cx}' cy='{cy}' r='{[100, 170, 230, 270, 290][levels]}' fill='{SUN}' opacity='.12'/>"]
+    rings = [(0, 1, 62, SUN), (120, 3, 44, CREAM), (195, 9, 30, '#7FD1C7'), (245, 27, 16, '#E9C46A'), (272, 81, 8, CREAM)]
+    for k, (r, n, s, col) in enumerate(rings[:levels + 1]):
+        if k:
+            out.append(f"<circle cx='{cx}' cy='{cy}' r='{r}' fill='none' stroke='{CREAM}' stroke-width='3' stroke-dasharray='10 10' opacity='.35'/>")
+        for i in range(n):
+            a = -math.pi / 2 + 2 * math.pi * i / n
+            out.append(_person(cx + r * math.cos(a), cy + r * math.sin(a) + s * 0.2, s, col))
+    h = {0: 130, 1: 200, 2: 260}.get(levels, 300)  # zoom in when there are few people so the art fills the frame
+    lab = (f"<text x='{300 + h * .72:.0f}' y='{300 - h * .62:.0f}' font-family='Poppins' font-weight='800' font-size='{h * .24:.0f}' "
+           f"fill='{SUN}' text-anchor='middle'>{label}</text>") if label else ""
+    return f"<svg viewBox='{300 - h} {300 - h} {2 * h} {2 * h}' width='760'>{''.join(out)}{lab}</svg>"
+
+
+ART["ripple_1"] = _ripple(0, "?")
+ART["ripple_3"] = _ripple(1, "×3")
+ART["ripple_9"] = _ripple(3, "10")
+ART["ripple_16"] = _ripple(4, "16")
+
+
 def main(script, outdir):
     os.makedirs(outdir, exist_ok=True)
     data = json.load(open(script))
