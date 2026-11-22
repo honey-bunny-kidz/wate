@@ -65,3 +65,27 @@
 | 11-14 | 20 hours to a new skill (First 20 Hours) | single card | 17 | 2 | 0 | 0 |
 
 **Next week (16–22 Nov):** make the "surprising number + reveal" reel the default format (2–3 per week): a money/number question in scene 1, a step-by-step reveal in scenes 2–4, then the book idea and an O/L tie-in. Follow-ups started 15 Nov (1% a day = 37×, Slight Edge) and 16 Nov carousel (Rs 20 a week challenge, Psychology of Money). Keep the one-tap number/emoji comment ask (it produced 18 comments). Keep kindness and reframe reels for the other days. Never skip the 8 PM reel: 2 reels missed this week when the computer was off.
+
+| Week ending | Posts | Impressions | Reactions | Comments | Shares | Best post (format, topic) | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-22 | 6 reels (16–21 Nov) + 15 Nov reel, 3 carousels, 4 single cards (+FB-native echoes, 0 reach) | 3760 | 31 | 0 | 82 | Reel 20 Nov "ජීවිතේ සති 4000යි" (Four Thousand Weeks, phone time): 1092 impr, 1023 reach | Down from the magic-rupee week (17.5k). Every reel 240–1100 impr; number reels did best (4000 weeks 1092, three good things/6 months 878) but none broke out. 0 comments all week despite one-tap asks. Only the bamboo reel got shares (81). Image posts 10–41 impr, 0 shares. |
+
+### Per post, week ending 2026-11-22 (Buffer, metrics as of 22 Nov 05:33 UTC)
+| Date | Post | Format | Impr | React | Comm | Shares |
+| --- | --- | --- | --- | --- | --- | --- |
+| 11-15 | 1% a day = 37× (Slight Edge) | reel 50 s | 281 | 6 | 0 | 0 |
+| 11-16 | සඳුදා අභියෝගය Rs 20 a day (Psychology of Money) | carousel | 41 | 1 | 0 | 0 |
+| 11-16 | Fold paper 42 times → Moon | reel | 315 | 2 | 0 | 0 |
+| 11-17 | Make your bed (Make Your Bed) | single card | 14 | 2 | 0 | 0 |
+| 11-17 | 10 tasks, 2 matter (80/20, Eat That Frog) | reel | 567 | 5 | 0 | 0 |
+| 11-18 | පොතක් විනාඩියෙන් habit loop (Power of Habit) | carousel | 21 | 1 | 0 | 0 |
+| 11-18 | Chinese bamboo 4 years → 80 ft | reel | 560 | 4 | 0 | 81 |
+| 11-19 | 20-second rule | single card | 12 | 1 | 0 | 0 |
+| 11-19 | Three good things → 6 months happier (Flourish) | reel | 878 | 6 | 0 | 1 |
+| 11-20 | O/L Countdown Pomodoro | carousel | 10 | 1 | 0 | 0 |
+| 11-20 | 4000 weeks, 4 h phone a day (Four Thousand Weeks) | reel | 1092 | 5 | 0 | 0 |
+| 11-21 | Rs 50 a day = Rs 18,250 | single card | 12 | 0 | 0 | 0 |
+| 11-21 | Kindness ripple ×3 (How of Happiness) | reel | 238 | 3 | 0 | 0 |
+| 11-22 | ඔබේ කතාව who helped you (Thanks!) | single card | n/a yet | | | |
+
+**Next week (23–29 Nov):** keep the 8 PM reel every day. Lean toward the two best reel types: (1) everyday life-vs-phone/time numbers (4000 weeks) and (2) personal, relatable stories with a simple number (toddler 17 falls, 22 Nov). Make the number personal to the viewer ("ඔයා…") in scene 1, as the magic-rupee and 4000-week hooks did. O/L is 8 Dec: Fri 27 Nov O/L Countdown carousel + 2 O/L reels (exam calm, last-week plan). Abstract kindness/maths ripples underperformed (238): fewer of those. Comments are stuck at 0: try a "comment the number you guess" ask BEFORE the reveal in scene 1–2 instead of only at the end. Image posts stay low-reach; keep them short and visual.

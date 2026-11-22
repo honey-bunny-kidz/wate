@@ -446,6 +446,56 @@ ART["ripple_9"] = _ripple(3, "10")
 ART["ripple_16"] = _ripple(4, "16")
 
 
+# Learning to walk (22 Nov, Mindset): toddlers fall ~17 times an hour but take thousands of steps a day
+def _toddler(pose, label="", steps=0):
+    SKIN, SHIRT, PANTS = "#E3A777", "#E76F51", CREAM
+    out = [f"<circle cx='300' cy='250' r='230' fill='{SUN}' opacity='{.22 if pose == 'up' else .13}'/>",
+           f"<rect x='40' y='440' width='520' height='10' rx='5' fill='{CREAM}' opacity='.35'/>"]
+    for i in range(steps):  # footprints marching left to right along the floor
+        x = 70 + i * 52
+        y = 418 if i % 2 else 432
+        out.append(f"<ellipse cx='{x}' cy='{y}' rx='15' ry='8' fill='{SUN}' opacity='{.35 + .6 * i / max(steps, 1):.2f}'/>")
+    if pose == "fall":
+        g = (f"<g transform='rotate(-14 300 380)'>"
+             f"<ellipse cx='300' cy='395' rx='70' ry='34' fill='{PANTS}'/>"
+             f"<path d='M245 395 q-60 10 -80 40' stroke='{SKIN}' stroke-width='28' stroke-linecap='round' fill='none'/>"
+             f"<path d='M355 395 q60 5 85 35' stroke='{SKIN}' stroke-width='28' stroke-linecap='round' fill='none'/>"
+             f"<rect x='250' y='265' width='100' height='120' rx='40' fill='{SHIRT}'/>"
+             f"<path d='M255 300 q-55 20 -70 70' stroke='{SKIN}' stroke-width='22' stroke-linecap='round' fill='none'/>"
+             f"<path d='M345 300 q55 20 70 70' stroke='{SKIN}' stroke-width='22' stroke-linecap='round' fill='none'/>"
+             f"<circle cx='300' cy='215' r='62' fill='{SKIN}'/>"
+             f"<path d='M250 190 q50 -60 100 0' fill='#3a2a20'/>"
+             f"<circle cx='280' cy='220' r='6' fill='#3a2a20'/><circle cx='320' cy='220' r='6' fill='#3a2a20'/>"
+             f"<ellipse cx='300' cy='248' rx='10' ry='8' fill='#B23A48'/></g>"
+             f"<g fill='{SUN}'><path d='M170 120 l8 18 l20 2 l-15 13 l5 20 l-18 -11 l-18 11 l5 -20 l-15 -13 l20 -2z'/>"
+             f"<path d='M120 250 l6 14 l15 1 l-11 10 l4 15 l-14 -8 l-14 8 l4 -15 l-11 -10 l15 -1z'/></g>")
+    else:
+        arm_l = "M258 300 q-50 -40 -60 -100" if pose == "up" else "M258 300 q-50 -10 -70 -60"
+        arm_r = "M342 300 q50 -40 60 -100" if pose == "up" else "M342 300 q50 -10 70 -60"
+        leg_l = "M280 375 l-30 62" if pose != "up" else "M282 375 l-12 62"
+        leg_r = "M320 375 l34 58" if pose != "up" else "M318 375 l12 62"
+        g = (f"<path d='{leg_l}' stroke='{PANTS}' stroke-width='34' stroke-linecap='round'/>"
+             f"<path d='{leg_r}' stroke='{PANTS}' stroke-width='34' stroke-linecap='round'/>"
+             f"<rect x='250' y='255' width='100' height='130' rx='40' fill='{SHIRT}'/>"
+             f"<path d='{arm_l}' stroke='{SKIN}' stroke-width='22' stroke-linecap='round' fill='none'/>"
+             f"<path d='{arm_r}' stroke='{SKIN}' stroke-width='22' stroke-linecap='round' fill='none'/>"
+             f"<circle cx='300' cy='195' r='64' fill='{SKIN}'/>"
+             f"<path d='M248 172 q52 -64 104 0' fill='#3a2a20'/>"
+             f"<circle cx='280' cy='200' r='6' fill='#3a2a20'/><circle cx='320' cy='200' r='6' fill='#3a2a20'/>"
+             f"<path d='M282 225 q18 16 36 0' stroke='#3a2a20' stroke-width='5' fill='none' stroke-linecap='round'/>")
+    out.append(g)
+    if label:
+        out.append(f"<text x='490' y='150' font-family='Poppins' font-weight='800' font-size='{86 if len(label) < 4 else 62}' "
+                   f"fill='{SUN}' text-anchor='middle'>{label}</text>")
+    return f"<svg viewBox='0 0 600 520' width='760'>{''.join(out)}</svg>"
+
+
+ART["toddler_q"] = _toddler("walk", "?")
+ART["toddler_fall"] = _toddler("fall", "17×")
+ART["toddler_steps"] = _toddler("walk", "1000s", steps=9)
+ART["toddler_up"] = _toddler("up", "", steps=5)
+
+
 def main(script, outdir):
     os.makedirs(outdir, exist_ok=True)
     data = json.load(open(script))

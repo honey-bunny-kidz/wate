@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-22",
+ "topic": "Toddlers learning to walk fall about 17 times an hour (Adolph et al. 2012) but take thousands of steps a day and never say 'I can't walk'. Mindset (Carol Dweck): a failure is how you learn, not who you are. O/L in 16 days: a wrong past-paper answer is just a fall; fix it and keep going. Comment 17, share with your little brother or sister doing O/L.",
+ "voice": "ඔයා පොඩි කාලේ, පැයකට දාහත් පාරක් බිම වැටුණා කියලා දන්නවද? ... ඇවිදින්න ඉගෙන ගන්න පොඩි දරුවෝ, පැයකට දාහත් වතාවක් විතර වැටෙනවා කියලා විද්‍යාඥයෝ හොයාගත්තා. ... ඒත් ඒ අයම, දවසකට පියවර දහස් ගණනක් තියනවා. වැටෙනවා, නැගිටිනවා, ආයෙත් යනවා. ... කිසිම පොඩි එකෙක් කියන්නේ නෑ, මට ඇවිදින්න බෑ කියලා. ... මයින්ඩ්සෙට් පොතේ කැරල් ඩ්වෙක් කියන විදියට, වැටීමක් කියන්නේ ඔයා කවුද කියන එක නෙවෙයි, ඔයා ඉගෙන ගන්න විදිය. ... O/L වලට තව දවස් දාසයයි. පාස් පේපර් එකේ වැරදුණු ප්‍රශ්නයක්, පොඩි වැටීමක් විතරයි. ඒක හදාගෙන, ආයෙත් යන්න. ... අද එක පොඩි පියවරක් තියන්න. වැටුණොත්, හිනාවෙලා නැගිටින්න. ... ඔයා අදත් නැගිටිනවා නම්, දාහත කියලා කමෙන්ට් කරන්න. O/L ලියන ඔයාගේ මල්ලිට හරි නංගිට හරි, මේක share කරන්න.",
+ "scenes": [
+  {"art": "toddler_q", "caption": "පැයකට <b>17 පාරක්</b><br>වැටුණා!", "kicker": ""},
+  {"art": "toddler_fall", "caption": "පැයට <b>17</b> වැටීම්", "kicker": ""},
+  {"art": "toddler_steps", "caption": "දවසට පියවර <b>දහස් ගණන්</b>", "kicker": ""},
+  {"art": "note_cant", "caption": "\"මට බෑ\" කිව්වේ <b>නෑ</b>", "kicker": ""},
+  {"art": "note_yet", "caption": "වැටීම = <b>ඉගෙනීම</b>", "kicker": "Mindset · Carol S. Dweck"},
+  {"art": "books", "caption": "වැරදි උත්තරයත්<br><b>පියවරක්</b>", "kicker": "O/L 2026 · තව දවස් 16යි"},
+  {"art": "toddler_up", "caption": "අද <b>එක පියවරක්</b>", "kicker": ""},
+  {"art": "endcard", "caption": "මල්ලිට, නංගිට<br><b>share</b> කරන්න 🔁", "kicker": "E Positive · \"17\" කමෙන්ට් කරන්න"}
+ ]
+}
