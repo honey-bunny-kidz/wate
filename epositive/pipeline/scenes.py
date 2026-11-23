@@ -496,6 +496,35 @@ ART["toddler_steps"] = _toddler("walk", "1000s", steps=9)
 ART["toddler_up"] = _toddler("up", "", steps=5)
 
 
+# O/L hours (23 Nov, Deep Work): 15 days = 360 h as a 15 x 24 grid (one row per day):
+# 8 h sleep, 6 h daily life, 4 h phone, 6 h free -> phone away = 10 h free a day = 150 h
+def _hours(stage, label):
+    cols = {"base": (CREAM, .85), "faded": (CREAM, .3), "sleep": ("#2B2D42", .9), "daily": (CREAM, .25),
+            "phone": ("#E76F51", 1), "free": (SUN, 1)}
+    groups = {}
+    for d in range(15):
+        for h in range(24):
+            kind = "sleep" if h < 8 else "daily" if h < 14 else "phone" if h < 18 else "free"
+            order = ["q", "360", "sleep", "daily", "phone", "left"].index(stage)
+            if order == 0: c = "faded"
+            elif order == 1: c = "base"
+            elif kind == "sleep": c = "sleep"
+            elif kind == "daily" and order >= 3: c = "daily"
+            elif kind == "phone" and order == 4: c = "phone"
+            elif kind == "phone" and order == 5: c = "free"
+            elif kind == "free" and order >= 4: c = "free"
+            else: c = "base"
+            x, y = 36 + h * 22.5, 160 + d * 22
+            groups.setdefault(c, []).append(f"M{x:.1f} {y}h19v19h-19z")
+    body = "".join(f"<path d='{''.join(v)}' fill='{cols[k][0]}' opacity='{cols[k][1]}'/>" for k, v in groups.items())
+    m = f"<text x='300' y='125' font-family='Poppins' font-weight='800' font-size='84' fill='{SUN}' text-anchor='middle'>{label}</text>" if label else ""
+    return (f"<svg viewBox='0 0 600 520' width='760'><circle cx='300' cy='300' r='230' fill='{SUN}' opacity='.10'/>" + body + m + "</svg>")
+
+
+for _st, _lab in [("q", "?"), ("360", "360"), ("sleep", "−120"), ("daily", "−90"), ("phone", "90"), ("left", "150")]:
+    ART["hours_" + _st] = _hours(_st, _lab)
+
+
 def main(script, outdir):
     os.makedirs(outdir, exist_ok=True)
     data = json.load(open(script))

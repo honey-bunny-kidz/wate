@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-23",
+ "topic": "O/L in 15 days = 360 hours. Sleep 8 h/day (-120), daily life 6 h/day (-90) leaves 150; 4 h/day phone (-60) leaves only 90. Phone away = 150 h = time for 50 past papers. Deep Work (Cal Newport): one focused hour with the phone in another room beats many distracted hours. Guess-the-number comment ask in scene 1; share with a cousin doing O/L.",
+ "voice": "O/L වලට ඔයාට තව පැය කීයක් ඉතුරුයි කියලා දන්නවද? අනුමාන කරලා, ඉලක්කම කමෙන්ට් කරන්න. ... දවස් පහළොවයි. ඒ කියන්නේ, පැය තුන්සිය හැටයි. ... ඒත් හොඳට නිදාගන්නත් ඕනේ. දවසට පැය අටයි. එතකොට, පැය එකසිය විස්සක් යනවා. ... කෑම, නාන එක, ගමන්, ගෙදර වැඩ. දවසට පැය හයක් විතර. තව අනූවක් යනවා. ... දවසට පැය හතරක් ෆෝන් එකේ ගියොත්, තව හැටක් යනවා. ඉතුරු වෙන්නේ අනූවයි. ... ෆෝන් එක පැත්තකින් තිබ්බොත්, පැය එකසිය පනහක්. පාස් පේපර්ස් පනහක් කරන්න පුළුවන් කාලයක්. ... ඩීප් වර්ක් පොතේ කැල් නිව්පෝට් කියන විදියට, ෆෝන් එක වෙන කාමරේක තියලා කරන එක පැයක්, අවධානය කැඩි කැඩී කරන පැය ගාණකට වඩා වටිනවා. ... අද එක පැයක්, ෆෝන් එක නැතුව පාඩම් කරන්න. O/L ලියන ඔයාගේ කසින්ට, මේක share කරන්න.",
+ "scenes": [
+  {"art": "hours_q", "caption": "O/L වලට<br><b>පැය කීයද?</b>", "kicker": "අනුමාන කරලා කමෙන්ට් කරන්න"},
+  {"art": "hours_360", "caption": "දවස් 15 = පැය <b>360</b>", "kicker": ""},
+  {"art": "hours_sleep", "caption": "නින්දට <b>120</b>", "kicker": "දවසට පැය 8"},
+  {"art": "hours_daily", "caption": "කෑම, ගමන්, වැඩ <b>90</b>", "kicker": "දවසට පැය 6"},
+  {"art": "hours_phone", "caption": "ෆෝන් එකට <b>60</b>", "kicker": "ඉතුරු පැය 90යි"},
+  {"art": "hours_left", "caption": "ෆෝන් නැත්නම් <b>150</b>", "kicker": "පාස් පේපර්ස් 50ක්"},
+  {"art": "phone_off", "caption": "එක පැයක් <b>ගැඹුරින්</b>", "kicker": "Deep Work · Cal Newport"},
+  {"art": "endcard", "caption": "කසින්ට<br><b>share</b> කරන්න 🔁", "kicker": "E Positive · ඔයාගේ අනුමානය කමෙන්ට් කරන්න"}
+ ]
+}
