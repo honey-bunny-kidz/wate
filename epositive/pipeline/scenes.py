@@ -498,11 +498,11 @@ ART["toddler_up"] = _toddler("up", "", steps=5)
 
 # O/L hours (23 Nov, Deep Work): 15 days = 360 h as a 15 x 24 grid (one row per day):
 # 8 h sleep, 6 h daily life, 4 h phone, 6 h free -> phone away = 10 h free a day = 150 h
-def _hours(stage, label):
+def _hours(stage, label, days=15):
     cols = {"base": (CREAM, .85), "faded": (CREAM, .3), "sleep": ("#2B2D42", .9), "daily": (CREAM, .25),
             "phone": ("#E76F51", 1), "free": (SUN, 1)}
     groups = {}
-    for d in range(15):
+    for d in range(days):
         for h in range(24):
             kind = "sleep" if h < 8 else "daily" if h < 14 else "phone" if h < 18 else "free"
             order = ["q", "360", "sleep", "daily", "phone", "left"].index(stage)
@@ -523,6 +523,9 @@ def _hours(stage, label):
 
 for _st, _lab in [("q", "?"), ("360", "360"), ("sleep", "−120"), ("daily", "−90"), ("phone", "90"), ("left", "150")]:
     ART["hours_" + _st] = _hours(_st, _lab)
+# 24 Nov: same grid for 14 days (336 h: sleep -112, daily -84, phone -56 -> 84 left; phone away -> 140)
+for _st, _lab in [("q", "?"), ("360", "336"), ("sleep", "−112"), ("daily", "−84"), ("phone", "84"), ("left", "140")]:
+    ART["hours14_" + _st] = _hours(_st, _lab, days=14)
 
 
 def main(script, outdir):
