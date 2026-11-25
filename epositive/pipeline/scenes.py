@@ -526,6 +526,9 @@ for _st, _lab in [("q", "?"), ("360", "360"), ("sleep", "−120"), ("daily", "�
 # 24 Nov: same grid for 14 days (336 h: sleep -112, daily -84, phone -56 -> 84 left; phone away -> 140)
 for _st, _lab in [("q", "?"), ("360", "336"), ("sleep", "−112"), ("daily", "−84"), ("phone", "84"), ("left", "140")]:
     ART["hours14_" + _st] = _hours(_st, _lab, days=14)
+# 25 Nov: 13 days (312 h: sleep -104, daily -78, phone -52 -> 78 left; phone away -> 130)
+for _st, _lab in [("q", "?"), ("360", "312"), ("sleep", "−104"), ("daily", "−78"), ("phone", "78"), ("left", "130")]:
+    ART["hours13_" + _st] = _hours(_st, _lab, days=13)
 
 
 def main(script, outdir):
