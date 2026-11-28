@@ -1,7 +1,7 @@
 # E Positive daily runbook
 
 Facebook page **E Positive** (Buffer channel `6add9b2c2f1f5ed648c4cd68`, org `6adb2e3a79a82670835a5497`, timezone Asia/Colombo).
-Every day: one Sinhala text post at **7:30 AM** and one Sinhala reel at **10:00 AM** (user, 26 Nov 2026: reel at the daily Facebook peak; Metricool activity for Sri Lanka peaks at 10 AM every day of the week, 8 PM is only ~60% of that). The daily task runs at 8:13 AM to make that day's reel.
+Every day: one Sinhala text post at **7:30 AM** and TWO Sinhala reels (user, 28 Nov 2026): **reel A at 10:00 AM** (daily Facebook peak in Sri Lanka) and **reel B at 6:00 PM** (evening peak; Sunday's 2nd-best hour). Metricool activity: 10 AM = 100%, 5–6 PM ≈ 80–85%, 8 PM ≈ 60%. The daily task runs at 8:13 AM and makes reel A first, then reel B. The two reels must have different topics and hooks (e.g. A = trend/O-L theme, B = habits, kindness, money or a book idea), different art and different share targets. Name them epositive_reel_YYYYMMDD.mp4 (A) and epositive_reel_YYYYMMDD_b.mp4 (B), scripts rYYYYMMDD.json / rYYYYMMDD_b.json. If reel A isn't ready by 9:50 AM, schedule it at 12:00 noon. Buffer free plan: 10 scheduled posts across ALL pages — check room first; the reels come before the next day's image post.
 
 ## Reel & Short rules (user, 2 Nov 2026 — apply to EVERY reel, Short and video)
 1. **Mobile 9:16**: 1080×1920. Keep everything important out of the bottom 20% (y ≥ 1536) and the right 15% (x ≥ 918) where the app's buttons and caption sit. `scenes.py` already lays out inside these zones.
