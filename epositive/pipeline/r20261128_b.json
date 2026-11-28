@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-28",
+ "topic": "Evening reel B: 10 pages a day = 3,650 pages a year = 14+ books (250-page books). ~15 minutes, a cup of tea. The Compound Effect (Darren Hardy). Read 10 pages before sleep, phone away; start tonight. Guess ask in scene 1. Share with a friend who says 'I have no time to read'.",
+ "voice": "දවසට පිටු දහයයි. අවුරුද්දකට පොත් කීයක් කියවන්න පුළුවන්ද? අනුමානය කමෙන්ට් කරන්න. ... පිටු දහයක් කියවන්න යන්නේ විනාඩි පහළොවක් විතර. තේ එකක් බොන වෙලාව වගේ. ... දවසට පිටු දහය, අවුරුද්දකට පිටු තුන්දාස් හයසිය පනහක්. ... පිටු දෙසිය පනහේ පොත් නම්, ඒ පොත් දාහතරකට වඩා! මාසෙට එකකට වඩා. ... ද කොම්පවුන්ඩ් එෆෙක්ට් පොතේ ඩැරන් හාඩි කියන විදියට, පොඩි දේවල් හැමදාම කළාම, ප්‍රතිඵල ලොකු වෙනවා. ... ෆෝන් එක පැත්තකින් තියලා, නිදාගන්න කලින් පිටු දහයක් කියවලා බලන්න. ... හෙට නෙවෙයි. අද රෑම පටන් ගන්න. ... මට කියවන්න වෙලාවක් නෑ කියන ඔයාගේ යාළුවෙක්ට මේක share කරන්න.",
+ "scenes": [
+  {"art": "books", "caption": "දවසට <b>පිටු 10</b><br>පොත් කීයද?", "kicker": "අවුරුද්දකට · අනුමානය කමෙන්ට් කරන්න"},
+  {"art": "tea", "caption": "විනාඩි <b>15</b>", "kicker": "තේ එකක් බොන වෙලාව"},
+  {"art": "steps", "caption": "පිටු <b>3,650</b>", "kicker": "අවුරුද්දකට"},
+  {"art": "trophy", "caption": "පොත් <b>14+</b>", "kicker": "පිටු 250 පොත් · මාසෙට එකකට වඩා"},
+  {"art": "plant", "caption": "පොඩි දේ<br><b>හැමදාම</b>", "kicker": "The Compound Effect · Darren Hardy"},
+  {"art": "phone_off", "caption": "<b>නිදාගන්න</b><br>කලින්", "kicker": "ෆෝන් එක පැත්තකට · පිටු 10"},
+  {"art": "lamp_one", "caption": "<b>අද රෑම</b><br>පටන් ගන්න", "kicker": "හෙට නෙවෙයි"},
+  {"art": "endcard", "caption": "කියවන්න වෙලා නෑ<br>කියන යාළුවාට <b>share</b> 🔁", "kicker": "E Positive · අනුමානය කමෙන්ට් කරන්න"}
+ ]
+}

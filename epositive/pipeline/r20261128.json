@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-28",
+ "topic": "O/L 10 days left: rereading doesn't build memory; we forget over half in a day; close the book and recall (retrieval practice), review today/tomorrow/in 3 days. Make It Stick (Brown, Roediger, McDaniel). Guess-the-number ask in scene 1. Share with a younger sibling sitting O/L.",
+ "voice": "O/L වලට තව දවස් දහයයි. අද කියවන දේවලින්, හෙට වෙද්දි කීයක් මතක තියෙයිද? ඔයාගේ අනුමානය කමෙන්ට් කරන්න. ... ගොඩක් අය එකම පාඩම නැවත නැවත කියවනවා. ඒත් කියවන එක විතරක්, මතකය හදන්නේ නෑ. ... දවසක් යද්දි, අලුතෙන් ඉගෙන ගත්ත දේවල් වලින් බාගයකට වඩා අපිට අමතක වෙනවා. ... ඒත් හොඳ ආරංචියක් තියෙනවා. පොත වහලා, මතක තියෙන දේ කොළේක ලියන්න. ඒක තමයි රහස. ... මේක් ඉට් ස්ටික් පොතේ කියන විදියට, තමන්ගෙන්ම ප්‍රශ්න අහන එක, නැවත කියවනවට වඩා හොඳට මතකය හදනවා. ... ඉතින් අද පාඩම, හෙටත්, දවස් තුනකින් ආයෙත් මතක් කරලා බලන්න. ... දවස් දහයක් කියන්නේ ගොඩක් කාලයක්. හරි විදියට පාඩම් කළොත්, ඔයාට පුළුවන්. ... O/L ලියන ඔයාගේ නංගිට හරි මල්ලිට හරි මේක share කරන්න.",
+ "scenes": [
+  {"art": "glasses", "caption": "හෙට වෙද්දි<br><b>කීයක්</b> මතකද?", "kicker": "O/L දවස් 10 · අනුමානය කමෙන්ට් කරන්න"},
+  {"art": "battery_low", "caption": "කියවීම <b>විතරක්</b><br>මදි", "kicker": "නැවත නැවත කියවනවා"},
+  {"art": "ice_melt", "caption": "<b>බාගයක්</b><br>අමතකයි", "kicker": "දවසක් යද්දි"},
+  {"art": "bulb", "caption": "පොත <b>වහලා</b><br>ලියන්න", "kicker": "මතක තියෙන දේ කොළේක"},
+  {"art": "notebook_3", "caption": "තමන්ගෙන්ම<br><b>ප්‍රශ්න</b>", "kicker": "Make It Stick · Brown, Roediger, McDaniel"},
+  {"art": "alarm", "caption": "අද · හෙට ·<br><b>දවස් 3න්</b>", "kicker": "ආයෙත් මතක් කරන්න"},
+  {"art": "rain_sun", "caption": "ඔයාට <b>පුළුවන්</b>", "kicker": "දවස් 10 ගොඩක් කාලයක්"},
+  {"art": "endcard", "caption": "නංගිට මල්ලිට<br><b>share</b> කරන්න 🔁", "kicker": "E Positive · අනුමානය කමෙන්ට් කරන්න"}
+ ]
+}
